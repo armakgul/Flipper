@@ -24,6 +24,8 @@ public class MyCharacterController : MonoBehaviour
     {
         RaycastHit2D hit = Physics2D.CircleCast(transform.position, castRadius, -transform.up, checkDistance, groundLayer);
 
+        Debug.DrawRay(transform.position, -transform.up * checkDistance, Color.green);
+
         if (hit.collider != null)
         {
             transform.position = hit.point + (Vector2)hit.normal * (checkDistance - hit.distance);
@@ -35,7 +37,7 @@ public class MyCharacterController : MonoBehaviour
 
             // Adjust the movement based on the isMovingRight variable
             float directionMultiplier = isMovingRight ? 1 : -1;
-            //transform.position += (Vector3)tangent * speed * Time.deltaTime * directionMultiplier;
+            transform.position += (Vector3)tangent * speed * Time.deltaTime * directionMultiplier;
         }
         /*else
         {

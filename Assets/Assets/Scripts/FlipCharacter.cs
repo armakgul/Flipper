@@ -49,7 +49,7 @@ public class FlipCharacter : MonoBehaviour
             float distance = Vector3.Distance(transform.position, shapeCenter);
             Debug.Log("Distance from character to shape center: " + distance);
 
-            customCharacterController.FlipMovementDirection();
+            //customCharacterController.FlipMovementDirection();
             
             // Calculate the mirrored rotation around the path
             Vector3 flippedRotation = new Vector3(-transform.eulerAngles.x, -transform.eulerAngles.y, transform.eulerAngles.z);
