@@ -58,7 +58,7 @@ public class MoveAndDetect : MonoBehaviour
             Vector2 newPosition = hitPoint + hitNormal * checkDistance * -1;
             transform.position = newPosition;
 
-            // Rotate the character to align with the path's surface and make it mirrored
+            /* Rotate the character to align with the path's surface and make it mirrored
             float targetRotation = Mathf.Atan2(hitNormal.y, hitNormal.x) * Mathf.Rad2Deg + 90;
             transform.rotation = Quaternion.Euler(0, 0, targetRotation);
 
@@ -67,7 +67,21 @@ public class MoveAndDetect : MonoBehaviour
             } else {
                 isFlipped = true;
             }
-             
+            */ 
+
+            // Rotate the character to adjust for the flip
+            transform.Rotate(0, 0, 180, Space.Self);
+           
+            
+            SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+            if (spriteRenderer != null)
+            {
+            spriteRenderer.flipX = !spriteRenderer.flipX;
+            }   
+            
+
+            // Toggle the isFlipped state
+            isFlipped = !isFlipped;
         }
     }
 }
