@@ -34,6 +34,7 @@ public class CollectAndDie : MonoBehaviour
         if (other.gameObject.tag == obstacleTag)
         {
             Debug.Log("dead");
+            //GoogleAdMobController.AdmobManager.ShowInterstitialAd();
             SceneManager.LoadScene("EntraceMenu");
         }
     }

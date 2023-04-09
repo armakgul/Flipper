@@ -5,7 +5,7 @@ public class ToggleObject : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private BoxCollider2D boxCollider2D;
 
-    void Start()
+     void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         boxCollider2D = GetComponent<BoxCollider2D>();
@@ -14,8 +14,11 @@ public class ToggleObject : MonoBehaviour
 
     public void SetActive(bool isActive)
     {
-        spriteRenderer.enabled = isActive;
-        boxCollider2D.enabled = isActive;
+        if (spriteRenderer != null && boxCollider2D != null)
+        {
+            spriteRenderer.enabled = isActive;
+            boxCollider2D.enabled = isActive;
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collision)
