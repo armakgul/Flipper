@@ -218,6 +218,9 @@ public class GoogleAdMobController : MonoBehaviour
                 {
                     PrintStatus("Interstitial ad closed.");
                     OnAdClosedEvent.Invoke();
+                    DestroyInterstitialAd();
+                    SceneManager.LoadScene("EntraceMenu");
+
                 };
                 ad.OnAdImpressionRecorded += () =>
                 {

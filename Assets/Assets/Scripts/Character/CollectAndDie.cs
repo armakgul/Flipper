@@ -10,14 +10,17 @@ public class CollectAndDie : MonoBehaviour
     public TextMeshProUGUI scoreText;
     float score = 1;
     public MoveAndDetect moveAndDetectRef;
+    public MyGameManager gameManager;
 
     public string hearthTag = "hearth";
     public string obstacleTag = "obstacle";
 
-    private void Start() {
-        
-            
+     public Animator animator;
+
+    void Start () {
+        animator.SetBool("Dead", false);
     }
+
 
     // assign hearth and obstacle missions
     private void OnTriggerEnter2D(Collider2D other) {
@@ -33,12 +36,17 @@ public class CollectAndDie : MonoBehaviour
 
         if (other.gameObject.tag == obstacleTag)
         {
+
+            animator.SetBool("Dead", true);
+            gameManager.DeathAnimAndStopCharacter();
             Debug.Log("dead");
-            //GoogleAdMobController.AdmobManager.ShowInterstitialAd();
-            SceneManager.LoadScene("EntraceMenu");
+
+            
+            
         }
+
+        
     }
-    
     
     
 }

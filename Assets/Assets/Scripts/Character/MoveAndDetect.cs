@@ -9,7 +9,11 @@ public class MoveAndDetect : MonoBehaviour
     public float castRadius = 0.1f;
     public LayerMask pathLayer;
     private bool isFlipped = false ;
+    public Animator animator;
 
+    void Start () {
+        animator.SetBool("Dead", false);
+    }
     void Update()
     {
         CustomMovement();
