@@ -3724,7 +3724,7 @@ GameObject:
   - component: {fileID: 1268405729}
   - component: {fileID: 1268405728}
   m_Layer: 5
-  m_Name: HighScoreText (1)
+  m_Name: HighScore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4303,7 +4303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f1321967f80eb44ca8f65888a27045a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 20
+  moveSpeed: 2
   checkDistance: 0.5
   castRadius: 0.5
   pathLayer:
@@ -4322,8 +4322,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 837696842}
+  levelScore: {fileID: 1268405728}
+  score: 1
   moveAndDetectRef: {fileID: 1713663005}
   gameManager: {fileID: 338009505}
+  highscore: 0
   hearthTag: hearth
   obstacleTag: obstacle
   animator: {fileID: 1713663000}
