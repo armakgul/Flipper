@@ -5,21 +5,26 @@ using UnityEngine;
 public class MyGameManager : MonoBehaviour
 {
     public MoveAndDetect moveAndDetectRef;
+    public GameOverScript gameOver;
     
+    
+    void Start() {
+        gameOver.CloseGameOverMenu();
+    }
+
     public void DeathAnimAndStopCharacter () {
         
         moveAndDetectRef.moveSpeed = 0f;
-        Invoke("OpenDeadMenu", 1.0f);
-
+        Invoke("Dead", 1.0f);
+        
         
     }
 
-    void OpenDeadMenu() {
+    public void Dead() {
         Debug.Log("death menu opened");
-        ShowInterstitial();
+        gameOver.OpenGameOverMenu();
+        
     }
 
-    void ShowInterstitial() {
-        GoogleAdMobController.AdmobManager.ShowInterstitialAd();
-    }
+    
 }

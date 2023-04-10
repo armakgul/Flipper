@@ -40,8 +40,6 @@ public class CollectAndDie : MonoBehaviour
             animator.SetBool("Dead", true);
             gameManager.DeathAnimAndStopCharacter();
             Debug.Log("dead");
-
-            
             
         }
 
