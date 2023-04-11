@@ -4303,7 +4303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f1321967f80eb44ca8f65888a27045a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 20
+  moveSpeed: 2
   checkDistance: 0.5
   castRadius: 0.5
   pathLayer:
