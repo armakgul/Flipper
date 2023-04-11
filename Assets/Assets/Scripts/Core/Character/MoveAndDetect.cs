@@ -9,6 +9,7 @@ public class MoveAndDetect : MonoBehaviour
     public float castRadius = 0.1f;
     public LayerMask pathLayer;
     private bool isFlipped = false ;
+    
    
     void Update()
     {
@@ -17,6 +18,7 @@ public class MoveAndDetect : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Flip();
+
         }
     }
 
@@ -43,6 +45,7 @@ public class MoveAndDetect : MonoBehaviour
             // Move the character along the tangent in the clockwise direction
             transform.position += (Vector3)tangent * moveSpeed * Time.deltaTime * directionMultiplier;
 
+           
 
         }
     }
