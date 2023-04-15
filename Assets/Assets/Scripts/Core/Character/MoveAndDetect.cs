@@ -15,7 +15,7 @@ public class MoveAndDetect : MonoBehaviour
     {
         CustomMovement();
 
-        if (Input.GetMouseButtonDown(0) || Input.touchCount > 0)
+        if (Input.GetMouseButtonDown(0))
         {
             Flip();
 

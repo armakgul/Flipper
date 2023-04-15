@@ -25,12 +25,21 @@ public class GameOverScript : MonoBehaviour
         gameOverMenuUI.SetActive(false);
     }
 
-    public void ShowInterstitial() {
+    public void InvokeShowIntersititial() {
+        Time.timeScale = 1f;
+        Invoke("LoadShowInterstitial",.25f);
+    }
+    private void LoadShowInterstitial() {
         GoogleAdMobController.AdmobManager.ShowInterstitialAd();
     }
 
+    //RESTART CURRENT LEVEL
     public void RestartGame() {
         Time.timeScale = 1f;
+        Invoke("LoadCurrentLevel",0.25f);
+    }
+
+    private void LoadCurrentLevel() {
         SceneManager.LoadScene(currentSceneIndex);
     }
 
