@@ -5,31 +5,53 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    // Start is called before the first frame update
+    
     public GameObject optionsMenu;
+    public Animator sliderAnimator;
 
     private void Start() {
         CloseOptionsMenu();
     }
+    
 
+    //LEVEL SELECTOR
     public void GoToLevelSelector() {
+        Invoke("LoadLevelSelector",0.1f);
+    }
+    private void LoadLevelSelector() {
         SceneManager.LoadScene("LevelSelector");
     }
 
-    public void QuitGame() {
-        Application.Quit();
-    }
 
+    //LOAD LAST LEVEL
     public void GoToTheLastLevel () {
+        Invoke("LoadLastScene",0.1f);
+        
+    }
+     private void LoadLastScene() {
         SceneManager.LoadScene("Level1");
     }
 
+
+    // QUIT GAME INA
+    public void QuitGame() {
+        Application.Quit();
+    }
+    
+    
+
+   
+    // OPEN AND CLOSE OPTIONS MENU
     public void OpenOptionsMenu () {
         optionsMenu.SetActive(true);
     }
-    public void CloseOptionsMenu () {
+    public void InvokeCloseOptionsMenu () {
+        Invoke("CloseOptionsMenu",0.1f);
+    }
+    private void CloseOptionsMenu() {
         optionsMenu.SetActive(false);
     }
+
 
     public void CloseSounds() {
 
@@ -39,5 +61,19 @@ public class MainMenu : MonoBehaviour
 
     }
 
+    public void SliderButtonReverse() {
+        
+        if (sliderAnimator.GetBool("playClose") == false)
+        {
+            sliderAnimator.SetBool("playClose",true);
+            sliderAnimator.SetBool("playOpen",false);
+
+        } else {
+            sliderAnimator.SetBool("playClose",false);
+            sliderAnimator.SetBool("playOpen",true);
+        }
+
+        
+    }
 
 }
