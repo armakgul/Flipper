@@ -56,7 +56,9 @@ public class GoogleAdMobController : MonoBehaviour
 
         AdmobManager = this;
 
-        RequestAndLoadInterstitialAd();
+        
+
+        
     }
 
     private void HandleInitCompleteAction(InitializationStatus initstatus)
@@ -70,6 +72,7 @@ public class GoogleAdMobController : MonoBehaviour
         MobileAdsEventExecutor.ExecuteInUpdate(() =>
         {
            RequestBannerAd();
+           RequestAndLoadInterstitialAd();
         });
     }
 
@@ -177,7 +180,7 @@ public class GoogleAdMobController : MonoBehaviour
 #elif UNITY_ANDROID
 //ca-app-pub-8351492506131400~2037310631
 //ca-app-pub-8351492506131400/8411147293
-        string adUnitId = "ca-app-pub-3940256099942544/1033173712";
+        string adUnitId = "ca-app-pub-8351492506131400/8411147293";
 #elif UNITY_IPHONE
         string adUnitId = "ca-app-pub-3940256099942544/4411468910";
 #else

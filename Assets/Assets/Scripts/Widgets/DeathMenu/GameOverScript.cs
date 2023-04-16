@@ -27,10 +27,12 @@ public class GameOverScript : MonoBehaviour
 
     public void InvokeShowIntersititial() {
         Time.timeScale = 1f;
-        Invoke("LoadShowInterstitial",.25f);
-    }
-    private void LoadShowInterstitial() {
         GoogleAdMobController.AdmobManager.ShowInterstitialAd();
+        //Invoke("LoadShowInterstitial",.25f);
+    }
+    public void LoadShowInterstitial() {
+        //GoogleAdMobController.AdmobManager.RequestAndLoadInterstitialAd();
+        //GoogleAdMobController.AdmobManager.ShowInterstitialAd();
     }
 
     //RESTART CURRENT LEVEL
@@ -46,4 +48,9 @@ public class GameOverScript : MonoBehaviour
     public void QuitGame() {
         Application.Quit();
     }
+    public void GoToMainMenu() {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("EntraceMenu");
+    }
+    
 }

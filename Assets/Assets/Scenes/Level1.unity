@@ -8822,7 +8822,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1777235581}
         m_TargetAssemblyTypeName: GameOverScript, Assembly-CSharp
-        m_MethodName: InvokeShowIntersititial
+        m_MethodName: GoToMainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
