@@ -9,6 +9,8 @@ public class MainMenu : MonoBehaviour
     public GameObject optionsMenu;
     public Animator sliderAnimator;
 
+    GoogleAdMobController adController;
+
     private void Start() {
         CloseOptionsMenu();
     }
@@ -58,7 +60,7 @@ public class MainMenu : MonoBehaviour
     }
 
     public void PlayRewardedAd() {
-
+        adController.ShowInterstitialAd();
     }
 
     public void SliderButtonReverse() {

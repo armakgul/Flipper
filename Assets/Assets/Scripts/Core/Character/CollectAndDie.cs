@@ -14,6 +14,9 @@ public class CollectAndDie : MonoBehaviour
     public MyGameManager gameManager;
     public int highscore;
 
+    public int nextLevelReq = 2;
+    public int nextLevelLoad;
+
     public string hearthTag = "hearth";
     public string obstacleTag = "obstacle";
 
@@ -21,7 +24,8 @@ public class CollectAndDie : MonoBehaviour
 
     void Start () {
         animator.SetBool("Dead", false);
-        highscore = PlayerPrefs.GetInt("highscore");
+        highscore = PlayerPrefs.GetInt("highscore"); 
+        
     }
 
    
@@ -45,10 +49,15 @@ public class CollectAndDie : MonoBehaviour
             {
                 highscore = score;
             }
+            else {
+                highscore = 1;
+            }
 
             PlayerPrefs.SetInt("highscore", highscore);
             
             moveAndDetectRef.moveSpeed = moveAndDetectRef.moveSpeed + 1.0f;
+
+            
 
         }
 

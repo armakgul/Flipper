@@ -1,9 +1,9 @@
 {
     "m_SelectedDeviceId": "85A699CQ5HWOZ9YT",
     "m_SelectedPackage": {
-        "deviceId": "85A699CQ5HWOZ9YT",
-        "name": "com.pivagames.piratedash",
-        "processId": 13000,
+        "deviceId": "",
+        "name": "",
+        "processId": 0,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -11,49 +11,31 @@
         {
             "deviceId": "85A699CQ5HWOZ9YT",
             "name": "com.pivagames.piratedash",
-            "processId": 25679,
-            "exited": false
-        },
-        {
-            "deviceId": "85A699CQ5HWOZ9YT",
-            "name": "com.pivagames.piratedash",
-            "processId": 27302,
-            "exited": false
-        },
-        {
-            "deviceId": "85A699CQ5HWOZ9YT",
-            "name": "com.pivagames.piratedash",
-            "processId": 3416,
-            "exited": false
-        },
-        {
-            "deviceId": "85A699CQ5HWOZ9YT",
-            "name": "com.pivagames.piratedash",
-            "processId": 4535,
-            "exited": false
-        },
-        {
-            "deviceId": "85A699CQ5HWOZ9YT",
-            "name": "com.pivagames.piratedash",
             "processId": 8117,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "85A699CQ5HWOZ9YT",
             "name": "com.pivagames.piratedash",
             "processId": 8908,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "85A699CQ5HWOZ9YT",
             "name": "com.pivagames.piratedash",
             "processId": 12132,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "85A699CQ5HWOZ9YT",
             "name": "com.pivagames.piratedash",
             "processId": 13000,
+            "exited": true
+        },
+        {
+            "deviceId": "85A699CQ5HWOZ9YT",
+            "name": "com.miui.home",
+            "processId": 1765,
             "exited": false
         }
     ],

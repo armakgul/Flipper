@@ -56,7 +56,7 @@ public class GoogleAdMobController : MonoBehaviour
 
         AdmobManager = this;
 
-        
+        RequestAndLoadInterstitialAd();
 
         
     }
@@ -72,7 +72,7 @@ public class GoogleAdMobController : MonoBehaviour
         MobileAdsEventExecutor.ExecuteInUpdate(() =>
         {
            RequestBannerAd();
-           RequestAndLoadInterstitialAd();
+           
         });
     }
 
