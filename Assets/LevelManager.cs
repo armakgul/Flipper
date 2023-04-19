@@ -9,6 +9,7 @@ public class LevelManager : MonoBehaviour
     public Button[] lvlButtons;
     void Start()
     {
+        PlayerPrefs.SetInt("levelAt" , 2);
         int levelAt = PlayerPrefs.GetInt("levelAt", 2);
 
         for (int i = 0; i < lvlButtons.Length; i++)
@@ -16,13 +17,10 @@ public class LevelManager : MonoBehaviour
             if (i+2 > levelAt)
             {
                 lvlButtons[i].interactable = false;
+            }else {
+                lvlButtons[i].interactable = true;
             }
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
