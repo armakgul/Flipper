@@ -12,7 +12,14 @@ public class LevelSelect : MonoBehaviour
     public TextMeshProUGUI levelText;
 
     public void Start() {
-        levelText.text = level.ToString();
+
+        
+
+        if (level == 5 || level == 6)
+        {
+            levelText.text = "COMING SOON".ToString();
+        } else levelText.text = level.ToString();
+
     }
 
     public void OpenScene() {

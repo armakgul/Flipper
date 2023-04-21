@@ -9120,7 +9120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f1321967f80eb44ca8f65888a27045a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 15
+  moveSpeed: 2
   checkDistance: 0.5
   castRadius: 0.5
   pathLayer:
@@ -9143,10 +9143,22 @@ MonoBehaviour:
   score: 1
   moveAndDetectRef: {fileID: 1713663005}
   gameManager: {fileID: 338009505}
-  highscore: 0
   hearthTag: hearth
   obstacleTag: obstacle
   animator: {fileID: 1713663000}
+  nextLevelReq1: 3
+  nextLevelReq2: 5
+  nextLevelReq3: 3
+  nextLevelReq4: 3
+  nextLevelReq5: 3
+  nextLevelLoad: 0
+  currentLevel: 0
+  highscore1: 0
+  highscore2: 0
+  highscore3: 0
+  highscore4: 0
+  highscore5: 0
+  highscore6: 0
 --- !u!1 &1735790387
 GameObject:
   m_ObjectHideFlags: 0

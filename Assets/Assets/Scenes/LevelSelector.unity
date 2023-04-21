@@ -424,7 +424,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 381716183}
-  - component: {fileID: 381716182}
+  - component: {fileID: 381716184}
   m_Layer: 0
   m_Name: LvlvSelectManager
   m_TagString: Untagged
@@ -432,7 +432,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &381716182
+--- !u!4 &381716183
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381716181}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.0744683, y: 8.409963, z: -0.12621409}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &381716184
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -451,21 +466,6 @@ MonoBehaviour:
   - {fileID: 2123055256}
   - {fileID: 1652358969}
   - {fileID: 1502016402}
---- !u!4 &381716183
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 381716181}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.0744683, y: 8.409963, z: -0.12621409}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &408251358
 GameObject:
   m_ObjectHideFlags: 0
@@ -823,12 +823,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 1907260542}
     m_Modifications:
     - target: {fileID: 1158004600874211956, guid: 92fcb2f0508f2c540aed98caffcf4d18, type: 3}
+      propertyPath: m_text
+      value: COMING SOON
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158004600874211956, guid: 92fcb2f0508f2c540aed98caffcf4d18, type: 3}
       propertyPath: m_fontSize
-      value: 29.9
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1158004600874211956, guid: 92fcb2f0508f2c540aed98caffcf4d18, type: 3}
       propertyPath: m_fontSizeBase
-      value: 29.9
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158004600874211956, guid: 92fcb2f0508f2c540aed98caffcf4d18, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1158004601389694378, guid: 92fcb2f0508f2c540aed98caffcf4d18, type: 3}
       propertyPath: m_Pivot.x
@@ -914,6 +922,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1158004601389694379, guid: 92fcb2f0508f2c540aed98caffcf4d18, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1158004601389694382, guid: 92fcb2f0508f2c540aed98caffcf4d18, type: 3}
       propertyPath: level
       value: 6
@@ -948,12 +960,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 1907260542}
     m_Modifications:
     - target: {fileID: 1158004600874211956, guid: 92fcb2f0508f2c540aed98caffcf4d18, type: 3}
+      propertyPath: m_text
+      value: COMING SOON
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158004600874211956, guid: 92fcb2f0508f2c540aed98caffcf4d18, type: 3}
       propertyPath: m_fontSize
-      value: 29.9
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1158004600874211956, guid: 92fcb2f0508f2c540aed98caffcf4d18, type: 3}
       propertyPath: m_fontSizeBase
-      value: 29.9
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1158004601389694378, guid: 92fcb2f0508f2c540aed98caffcf4d18, type: 3}
       propertyPath: m_Pivot.x
@@ -1037,6 +1053,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1158004601389694378, guid: 92fcb2f0508f2c540aed98caffcf4d18, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158004601389694379, guid: 92fcb2f0508f2c540aed98caffcf4d18, type: 3}
+      propertyPath: m_Interactable
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1158004601389694382, guid: 92fcb2f0508f2c540aed98caffcf4d18, type: 3}

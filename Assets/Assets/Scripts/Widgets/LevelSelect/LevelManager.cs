@@ -9,8 +9,8 @@ public class LevelManager : MonoBehaviour
     public Button[] lvlButtons;
     void Start()
     {
-        PlayerPrefs.SetInt("levelAt" , 2);
-        int levelAt = PlayerPrefs.GetInt("levelAt", 2);
+        PlayerPrefs.SetInt("levelAt" , 1);
+        int levelAt = PlayerPrefs.GetInt("levelAt", 1);
 
         for (int i = 0; i < lvlButtons.Length; i++)
         {

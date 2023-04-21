@@ -2005,6 +2005,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 229652278}
     m_Modifications:
+    - target: {fileID: -6481685011092063728, guid: 220e71644b3f1ad49a8fe76761d974b9, type: 3}
+      propertyPath: rotationRate
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 165054398123624547, guid: 220e71644b3f1ad49a8fe76761d974b9, type: 3}
       propertyPath: m_Name
       value: H1 1
@@ -8947,7 +8951,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f1321967f80eb44ca8f65888a27045a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 2
   checkDistance: 0.5
   castRadius: 0.5
   pathLayer:
@@ -9349,6 +9353,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 229652278}
     m_Modifications:
+    - target: {fileID: -6481685011092063728, guid: 220e71644b3f1ad49a8fe76761d974b9, type: 3}
+      propertyPath: rotationRate
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 165054398123624547, guid: 220e71644b3f1ad49a8fe76761d974b9, type: 3}
       propertyPath: m_Name
       value: H1 1 (1)
