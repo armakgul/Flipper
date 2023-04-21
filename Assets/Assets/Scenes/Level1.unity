@@ -663,7 +663,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SCORE
+  m_text: HIGHSCORE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -690,8 +690,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 100
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1476,8 +1476,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4288135903
+  m_fontColor: {r: 0.8745099, g: 0.7607844, b: 0.5921569, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2019,11 +2019,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 165054398123624549, guid: 220e71644b3f1ad49a8fe76761d974b9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.16
+      value: 3.96
       objectReference: {fileID: 0}
     - target: {fileID: 165054398123624549, guid: 220e71644b3f1ad49a8fe76761d974b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.46
+      value: 4.85
       objectReference: {fileID: 0}
     - target: {fileID: 165054398123624549, guid: 220e71644b3f1ad49a8fe76761d974b9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9071,7 +9071,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1777235577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9217,11 +9217,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 165054398123624549, guid: 220e71644b3f1ad49a8fe76761d974b9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.13
+      value: -3.72
       objectReference: {fileID: 0}
     - target: {fileID: 165054398123624549, guid: 220e71644b3f1ad49a8fe76761d974b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.82
+      value: 5.13
       objectReference: {fileID: 0}
     - target: {fileID: 165054398123624549, guid: 220e71644b3f1ad49a8fe76761d974b9, type: 3}
       propertyPath: m_LocalPosition.z

@@ -9,12 +9,13 @@ public class LevelManager : MonoBehaviour
     public Button[] lvlButtons;
     void Start()
     {
-        PlayerPrefs.SetInt("levelAt" , 1);
+        //PlayerPrefs.SetInt("levelAt", 1);
         int levelAt = PlayerPrefs.GetInt("levelAt", 1);
+        Debug.Log("levelAt in LevelManager is :" + PlayerPrefs.GetInt("levelAt"));
 
-        for (int i = 0; i < lvlButtons.Length; i++)
+        for (int i = 0; i < lvlButtons.Length-2; i++)
         {
-            if (i+2 > levelAt)
+            if (i+1 > levelAt)
             {
                 lvlButtons[i].interactable = false;
             }else {
