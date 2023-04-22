@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using GoogleMobileAds.Api;
 
 
 public class GameOverScript : MonoBehaviour
 {
+
+    public GoogleAdMobController admanager;
 
     public GameObject gameOverMenuUI;
     int currentSceneIndex;
@@ -51,11 +54,15 @@ public class GameOverScript : MonoBehaviour
      public void InvokeShowIntersititial() {
         //GoogleAdMobController.AdmobManager.RequestAndLoadInterstitialAd();
         //GoogleAdMobController.AdmobManager.ShowInterstitialAd();
-        Invoke("LoadShowInterstitial",.25f);
+        //Invoke("LoadShowInterstitial",.25f);
+        admanager.RequestAndLoadInterstitialAd();
+        admanager.ShowInterstitialAd();
     }
     public void LoadShowInterstitial() {
-        GoogleAdMobController.AdmobManager.RequestAndLoadInterstitialAd();
-        GoogleAdMobController.AdmobManager.ShowInterstitialAd();
+       GoogleAdMobController.AdmobManager.RequestAndLoadInterstitialAd();
+       GoogleAdMobController.AdmobManager.ShowInterstitialAd();
+
+        
     }
     
 }

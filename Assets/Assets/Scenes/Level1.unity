@@ -9042,6 +9042,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18a9aab6fb08ce042994ae10818167db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  admanager: {fileID: 1735790390}
   gameOverMenuUI: {fileID: 1777235576}
 --- !u!1 &1781004771
 GameObject:

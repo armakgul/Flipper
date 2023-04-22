@@ -31,6 +31,7 @@ public class GoogleAdMobController : MonoBehaviour
     public void Start()
     {
         MobileAds.SetiOSAppPauseOnBackground(true);
+        
 
         List<String> deviceIds = new List<String>() { AdRequest.TestDeviceSimulator };
 
@@ -178,9 +179,9 @@ public class GoogleAdMobController : MonoBehaviour
 #if UNITY_EDITOR
         string adUnitId = "unused";
 #elif UNITY_ANDROID
-//ca-app-pub-8351492506131400~2037310631
+
 //ca-app-pub-8351492506131400/8411147293
-        string adUnitId = "ca-app-pub-8351492506131400/8411147293";
+        string adUnitId = "ca-app-pub-3940256099942544/1033173712";
 #elif UNITY_IPHONE
         string adUnitId = "ca-app-pub-3940256099942544/4411468910";
 #else
@@ -207,6 +208,7 @@ public class GoogleAdMobController : MonoBehaviour
                 {
                     PrintStatus("Interstitial ad failed to load.");
                     return;
+                    SceneManager.LoadScene("EntraceMenu");
                 }
 
                 PrintStatus("Interstitial ad loaded.");
@@ -258,6 +260,7 @@ public class GoogleAdMobController : MonoBehaviour
         else
         {
             PrintStatus("Interstitial ad is not ready yet.");
+            SceneManager.LoadScene("EntraceMenu");
         }
     }
 

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using GoogleMobileAds.Api;
 
 public class MainMenu : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class MainMenu : MonoBehaviour
     public GameObject optionsMenu;
     public Animator sliderAnimator;
 
-    GoogleAdMobController adController;
+    public GoogleAdMobController admanager;
 
    
 
@@ -62,8 +63,10 @@ public class MainMenu : MonoBehaviour
     
     //PLAY REWARDED ADS
     public void PlayRewardedAd() {
-        adController.RequestAndLoadInterstitialAd();
-        adController.ShowInterstitialAd();
+        //GoogleAdMobController.AdmobManager.RequestAndLoadInterstitialAd();
+        //GoogleAdMobController.AdmobManager.ShowInterstitialAd();
+        admanager.RequestAndLoadInterstitialAd();
+        admanager.ShowInterstitialAd();
     }
 
 
