@@ -80,6 +80,12 @@ public class CollectAndDie : MonoBehaviour
         Debug.Log("highscore4 is : " + highscore4);
         Debug.Log("highscore5 is : " + highscore5);
         Debug.Log("highscore6 is : " + highscore6);
+
+
+        // PLAY WALKING EFFECT
+        FindObjectOfType<AudioManager>().Play("Walking");
+
+
     }
 
    
@@ -89,6 +95,9 @@ public class CollectAndDie : MonoBehaviour
         
         if (other.gameObject.tag == hearthTag)
         {
+
+            FindObjectOfType<AudioManager>().PitchInc("Walking");
+
    
             //score ingame changes
             scoreText.text = score.ToString();
@@ -214,6 +223,7 @@ public class CollectAndDie : MonoBehaviour
                 }
             }
             
+            // VELO INC BY COLLECT
             moveAndDetectRef.moveSpeed = moveAndDetectRef.moveSpeed + 1.0f;
 
             
@@ -243,6 +253,9 @@ public class CollectAndDie : MonoBehaviour
                 levelScore.text = (highscore6-1).ToString();
             }
             
+            // SOUND STUFF
+            FindObjectOfType<AudioManager>().Play("Player Death");
+            FindObjectOfType<AudioManager>().Stop("Walking");
             
             gameManager.DeathAnimAndStopCharacter();
             
