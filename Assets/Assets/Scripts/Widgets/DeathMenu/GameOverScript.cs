@@ -25,15 +25,7 @@ public class GameOverScript : MonoBehaviour
         gameOverMenuUI.SetActive(false);
     }
 
-    public void InvokeShowIntersititial() {
-        Time.timeScale = 1f;
-        GoogleAdMobController.AdmobManager.ShowInterstitialAd();
-        //Invoke("LoadShowInterstitial",.25f);
-    }
-    public void LoadShowInterstitial() {
-        //GoogleAdMobController.AdmobManager.RequestAndLoadInterstitialAd();
-        //GoogleAdMobController.AdmobManager.ShowInterstitialAd();
-    }
+   
 
     //RESTART CURRENT LEVEL
     public void RestartGame() {
@@ -48,9 +40,22 @@ public class GameOverScript : MonoBehaviour
     public void QuitGame() {
         Application.Quit();
     }
+
+
+    //main menu and intersitial
     public void GoToMainMenu() {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("EntraceMenu");
+        InvokeShowIntersititial();
+        //SceneManager.LoadScene("EntraceMenu");
+    }
+     public void InvokeShowIntersititial() {
+        //GoogleAdMobController.AdmobManager.RequestAndLoadInterstitialAd();
+        //GoogleAdMobController.AdmobManager.ShowInterstitialAd();
+        Invoke("LoadShowInterstitial",.25f);
+    }
+    public void LoadShowInterstitial() {
+        GoogleAdMobController.AdmobManager.RequestAndLoadInterstitialAd();
+        GoogleAdMobController.AdmobManager.ShowInterstitialAd();
     }
     
 }

@@ -26,7 +26,7 @@ public class CollectAndDie : MonoBehaviour
     public int nextLevelReq2 = 8;
     public int nextLevelReq3 = 9;
     public int nextLevelReq4 = 10;
-    public int nextLevelReq5 = 3;
+    public int nextLevelReq5 = 11;
     
     //public int nextLevelReq6 = 3;
 
@@ -73,6 +73,12 @@ public class CollectAndDie : MonoBehaviour
         highscore4 = 1;    
         highscore5 = 1;
         highscore6 = 1;
+        PlayerPrefs.SetInt("highscore1", 1);
+        PlayerPrefs.SetInt("highscore2", 1);
+        PlayerPrefs.SetInt("highscore3", 1);
+        PlayerPrefs.SetInt("highscore4", 1);
+        PlayerPrefs.SetInt("highscore5", 1);
+        PlayerPrefs.SetInt("highscore6", 1);
         */
         Debug.Log("highscore1 is : " + highscore1);
         Debug.Log("highscore2 is : " + highscore2);
@@ -97,7 +103,7 @@ public class CollectAndDie : MonoBehaviour
         {
 
             FindObjectOfType<AudioManager>().PitchInc("Walking");
-
+            FindObjectOfType<AudioManager>().Play("Collect");
    
             //score ingame changes
             scoreText.text = score.ToString();
@@ -117,11 +123,10 @@ public class CollectAndDie : MonoBehaviour
                 
                  if (highscore1 >= nextLevelReq1 && currentLevel >= PlayerPrefs.GetInt("levelAt"))
                 {
-                    
-                        Debug.Log(highscore1);
+
                         nextLevelLoad = currentLevel + 1;
                         PlayerPrefs.SetInt("levelAt", nextLevelLoad);
-                    
+
                 }
                 
                 Debug.Log("nextLevelLoad is :" + nextLevelLoad);
@@ -142,13 +147,10 @@ public class CollectAndDie : MonoBehaviour
                 
                  if (highscore2 >= nextLevelReq2 && currentLevel >= PlayerPrefs.GetInt("levelAt"))
                 {
-                    
-                    
-                    
+
                         nextLevelLoad = currentLevel + 1;
                         PlayerPrefs.SetInt("levelAt", nextLevelLoad);
                         
-                    
                 }
             }
             //LEVEL 3
@@ -166,11 +168,8 @@ public class CollectAndDie : MonoBehaviour
                  if (highscore3 >= nextLevelReq3 && currentLevel >= PlayerPrefs.GetInt("levelAt"))
                 {
                     
-                    
-                        Debug.Log(highscore3);
                         nextLevelLoad = currentLevel + 1;
                         PlayerPrefs.SetInt("levelAt", nextLevelLoad);
-                        
                     
                 }
             }
@@ -190,8 +189,7 @@ public class CollectAndDie : MonoBehaviour
                 {
                     
                     
-                    
-                        Debug.Log(highscore4);
+    
                         nextLevelLoad = currentLevel + 1;
                         PlayerPrefs.SetInt("levelAt", nextLevelLoad);
                         
@@ -213,9 +211,7 @@ public class CollectAndDie : MonoBehaviour
                  if (highscore5 >= nextLevelReq5 && currentLevel >= PlayerPrefs.GetInt("levelAt"))
                 {
                     
-                    
-                    
-                        Debug.Log(highscore5);
+ 
                         nextLevelLoad = currentLevel + 1;
                         PlayerPrefs.SetInt("levelAt", nextLevelLoad);
                         

@@ -62,6 +62,7 @@ public class MainMenu : MonoBehaviour
     
     //PLAY REWARDED ADS
     public void PlayRewardedAd() {
+        adController.RequestAndLoadInterstitialAd();
         adController.ShowInterstitialAd();
     }
 

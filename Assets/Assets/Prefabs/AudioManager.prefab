@@ -63,10 +63,10 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
-  - name: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
+  - name: Collect
+    clip: {fileID: 8300000, guid: 0d366b001b7e8c944b0184f56af6bad0, type: 3}
+    volume: 1
+    pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: 
