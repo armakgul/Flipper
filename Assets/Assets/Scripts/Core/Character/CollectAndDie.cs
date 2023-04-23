@@ -8,8 +8,9 @@ using UnityEngine.SceneManagement;
 public class CollectAndDie : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI EndScoreText;
     public TextMeshProUGUI levelScore;
-    public int score = 1;
+    public int score = 0;
     public MoveAndDetect moveAndDetectRef;
     public MyGameManager gameManager;
   
@@ -22,8 +23,8 @@ public class CollectAndDie : MonoBehaviour
 
     // LEVEL TOPSCORE VE HIGHCORELARI
 
-    public int nextLevelReq1 = 7;
-    public int nextLevelReq2 = 8;
+    public int nextLevelReq1 = 9;
+    public int nextLevelReq2 = 9;
     public int nextLevelReq3 = 9;
     public int nextLevelReq4 = 10;
     public int nextLevelReq5 = 11;
@@ -92,6 +93,10 @@ public class CollectAndDie : MonoBehaviour
         FindObjectOfType<AudioManager>().Play("Walking");
 
 
+    }
+
+    public  void WalkSpeedInc() {
+        moveAndDetectRef.moveSpeed += 2f;
     }
 
    
@@ -220,11 +225,14 @@ public class CollectAndDie : MonoBehaviour
             }
             
             // VELO INC BY COLLECT
-            moveAndDetectRef.moveSpeed = moveAndDetectRef.moveSpeed + 1.0f;
-
-            
+            if (score <= 7)
+            {
+                Invoke("WalkSpeedInc",0.5f);
+            }
 
         }
+
+       
 
         if (other.gameObject.tag == obstacleTag)
         {
@@ -232,21 +240,27 @@ public class CollectAndDie : MonoBehaviour
             animator.SetBool("Dead", true);
             if (currentLevel == 1) {
                 levelScore.text = (highscore1-1).ToString();
+                EndScoreText.text = (score-1).ToString();
             }
             if (currentLevel == 2) {
                 levelScore.text = (highscore2-1).ToString();
+                EndScoreText.text = (score-1).ToString();
             }
             if (currentLevel == 3) {
                 levelScore.text = (highscore3-1).ToString();
+                EndScoreText.text = (score-1).ToString();
             }
             if (currentLevel == 4) {
                 levelScore.text = (highscore4-1).ToString();
+                EndScoreText.text = (score-1).ToString();
             }
             if (currentLevel == 5) {
                 levelScore.text = (highscore5-1).ToString();
+                EndScoreText.text = (score-1).ToString();
             }
             if (currentLevel == 6) {
                 levelScore.text = (highscore6-1).ToString();
+                EndScoreText.text = (score-1).ToString();
             }
             
             // SOUND STUFF

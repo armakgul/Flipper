@@ -65,7 +65,7 @@ public class MainMenu : MonoBehaviour
     public void PlayRewardedAd() {
         //GoogleAdMobController.AdmobManager.RequestAndLoadInterstitialAd();
         //GoogleAdMobController.AdmobManager.ShowInterstitialAd();
-        admanager.RequestAndLoadInterstitialAd();
+        //admanager.RequestAndLoadInterstitialAd();
         admanager.ShowInterstitialAd();
     }
 

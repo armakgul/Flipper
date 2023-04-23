@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using GoogleMobileAds;
 using GoogleMobileAds.Api;
 using GoogleMobileAds.Common;
 using System;
@@ -31,6 +32,12 @@ public class GoogleAdMobController : MonoBehaviour
     public void Start()
     {
         MobileAds.SetiOSAppPauseOnBackground(true);
+         // Initialize the Google Mobile Ads SDK.
+        MobileAds.Initialize(initStatus => { });
+        // When true all events raised by GoogleMobileAds will be raised
+        // on the Unity main thread. The default value is false.
+        MobileAds.RaiseAdEventsOnUnityMainThread = true;
+
         
 
         List<String> deviceIds = new List<String>() { AdRequest.TestDeviceSimulator };
@@ -54,6 +61,8 @@ public class GoogleAdMobController : MonoBehaviour
 
         // Listen to application foreground / background events.
         AppStateEventNotifier.AppStateChanged += OnAppStateChanged;
+
+        
 
         AdmobManager = this;
 
@@ -102,7 +111,7 @@ public class GoogleAdMobController : MonoBehaviour
 #if UNITY_EDITOR
         string adUnitId = "unused";
 #elif UNITY_ANDROID
-        string adUnitId = "ca-app-pub-3940256099942544/6300978111";
+        string adUnitId = "ca-app-pub-8351492506131400/4583199451";
 #elif UNITY_IPHONE
         string adUnitId = "ca-app-pub-3940256099942544/2934735716";
 #else
@@ -181,7 +190,7 @@ public class GoogleAdMobController : MonoBehaviour
 #elif UNITY_ANDROID
 
 //ca-app-pub-8351492506131400/8411147293
-        string adUnitId = "ca-app-pub-3940256099942544/1033173712";
+        string adUnitId = "ca-app-pub-8351492506131400/8411147293";
 #elif UNITY_IPHONE
         string adUnitId = "ca-app-pub-3940256099942544/4411468910";
 #else
