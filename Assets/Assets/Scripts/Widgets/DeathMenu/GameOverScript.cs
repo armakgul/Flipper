@@ -55,11 +55,11 @@ public class GameOverScript : MonoBehaviour
         //GoogleAdMobController.AdmobManager.RequestAndLoadInterstitialAd();
         //GoogleAdMobController.AdmobManager.ShowInterstitialAd();
         //Invoke("LoadShowInterstitial",.25f);
-        admanager.RequestAndLoadInterstitialAd();
+        //admanager.RequestAndLoadInterstitialAd();
         admanager.ShowInterstitialAd();
     }
     public void LoadShowInterstitial() {
-       GoogleAdMobController.AdmobManager.RequestAndLoadInterstitialAd();
+       //GoogleAdMobController.AdmobManager.RequestAndLoadInterstitialAd();
        GoogleAdMobController.AdmobManager.ShowInterstitialAd();
 
         

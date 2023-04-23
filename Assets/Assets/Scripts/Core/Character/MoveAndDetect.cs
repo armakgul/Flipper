@@ -39,7 +39,7 @@ public class MoveAndDetect : MonoBehaviour
             // Calculate the tangent of the path
             Vector2 tangent = new Vector2(hit.normal.y, -hit.normal.x);
 
-            // Determine the clockwise direction based on flipped state
+            // Determine the clockwise direction based on flipped state 
             float directionMultiplier = isFlipped ? -1 : 1;
 
             // Move the character along the tangent in the clockwise direction
