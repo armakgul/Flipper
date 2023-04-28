@@ -111,7 +111,7 @@ public class GoogleAdMobController : MonoBehaviour
 #if UNITY_EDITOR
         string adUnitId = "unused";
 #elif UNITY_ANDROID
-        string adUnitId = "ca-app-pub-8351492506131400/4583199451";
+        string adUnitId = "ca-app-pub-8351492506131400/5959073882";
 #elif UNITY_IPHONE
         string adUnitId = "ca-app-pub-3940256099942544/2934735716";
 #else
@@ -188,9 +188,7 @@ public class GoogleAdMobController : MonoBehaviour
 #if UNITY_EDITOR
         string adUnitId = "unused";
 #elif UNITY_ANDROID
-
-//ca-app-pub-8351492506131400/8411147293
-        string adUnitId = "ca-app-pub-8351492506131400/8411147293";
+        string adUnitId = "ca-app-pub-8351492506131400/9706747200";
 #elif UNITY_IPHONE
         string adUnitId = "ca-app-pub-3940256099942544/4411468910";
 #else
