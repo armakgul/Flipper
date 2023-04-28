@@ -23,11 +23,11 @@ public class CollectAndDie : MonoBehaviour
 
     // LEVEL TOPSCORE VE HIGHCORELARI
 
-    public int nextLevelReq1 = 9;
-    public int nextLevelReq2 = 9;
-    public int nextLevelReq3 = 9;
-    public int nextLevelReq4 = 10;
-    public int nextLevelReq5 = 11;
+    private int nextLevelReq1 = 7;
+    private int nextLevelReq2 = 8;
+    private int nextLevelReq3 = 9;
+    private int nextLevelReq4 = 9;
+    private int nextLevelReq5 = 10;
     
     //public int nextLevelReq6 = 3;
 
@@ -81,6 +81,7 @@ public class CollectAndDie : MonoBehaviour
         PlayerPrefs.SetInt("highscore5", 1);
         PlayerPrefs.SetInt("highscore6", 1);
         */
+
         Debug.Log("highscore1 is : " + highscore1);
         Debug.Log("highscore2 is : " + highscore2);
         Debug.Log("highscore3 is : " + highscore3);
