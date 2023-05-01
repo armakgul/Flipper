@@ -97,7 +97,7 @@ public class CollectAndDie : MonoBehaviour
     }
 
     public  void WalkSpeedInc() {
-        moveAndDetectRef.moveSpeed += 2f;
+        moveAndDetectRef.moveSpeed += 1f;
     }
 
    
