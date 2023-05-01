@@ -13,7 +13,7 @@ public class LevelManager : MonoBehaviour
         int levelAt = PlayerPrefs.GetInt("levelAt", 1);
         Debug.Log("levelAt in LevelManager is :" + PlayerPrefs.GetInt("levelAt"));
 
-        for (int i = 0; i < lvlButtons.Length-2; i++)
+        for (int i = 0; i < lvlButtons.Length; i++)
         {
             if (i+1 > levelAt)
             {

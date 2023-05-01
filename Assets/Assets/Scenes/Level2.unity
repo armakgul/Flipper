@@ -7694,11 +7694,6 @@ MonoBehaviour:
   hearthTag: hearth
   obstacleTag: obstacle
   animator: {fileID: 1713663000}
-  nextLevelReq1: 3
-  nextLevelReq2: 5
-  nextLevelReq3: 3
-  nextLevelReq4: 3
-  nextLevelReq5: 3
   nextLevelLoad: 0
   currentLevel: 0
   highscore1: 0
@@ -7870,7 +7865,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5229107609297066070, guid: d9d1c62a82a0f074bb29aff2db186814, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9d1c62a82a0f074bb29aff2db186814, type: 3}
