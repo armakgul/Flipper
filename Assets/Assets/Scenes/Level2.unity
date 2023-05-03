@@ -459,6 +459,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &170306825 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1659796295936459986, guid: feb43deefa8c53b4ca93c863b6e609c9, type: 3}
+  m_PrefabInstance: {fileID: 170306822}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &229652277
 GameObject:
   m_ObjectHideFlags: 0
@@ -646,6 +651,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveAndDetectRef: {fileID: 1713663005}
   gameOver: {fileID: 1758461413}
+  inGameMEnu: {fileID: 170306825}
 --- !u!1001 &338920522
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7691,9 +7697,15 @@ MonoBehaviour:
   score: 1
   moveAndDetectRef: {fileID: 1713663005}
   gameManager: {fileID: 338009505}
+  NextLevelMenu: {fileID: 0}
   hearthTag: hearth
   obstacleTag: obstacle
   animator: {fileID: 1713663000}
+  nextLevelReq1: 7
+  nextLevelReq2: 8
+  nextLevelReq3: 9
+  nextLevelReq4: 9
+  nextLevelReq5: 10
   nextLevelLoad: 0
   currentLevel: 0
   highscore1: 0
@@ -7859,6 +7871,10 @@ PrefabInstance:
       propertyPath: admanager
       value: 
       objectReference: {fileID: 1735790390}
+    - target: {fileID: 5229107609297066067, guid: d9d1c62a82a0f074bb29aff2db186814, type: 3}
+      propertyPath: inGameMenu
+      value: 
+      objectReference: {fileID: 170306825}
     - target: {fileID: 5229107609297066070, guid: d9d1c62a82a0f074bb29aff2db186814, type: 3}
       propertyPath: m_Name
       value: DeathMenu

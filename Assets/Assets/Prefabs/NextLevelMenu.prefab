@@ -1245,7 +1245,7 @@ GameObject:
   - component: {fileID: 5229107609297066071}
   - component: {fileID: 5229107609297066067}
   m_Layer: 5
-  m_Name: DeathMenu
+  m_Name: NextLevelMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -6,10 +6,12 @@ public class MyGameManager : MonoBehaviour
 {
     public MoveAndDetect moveAndDetectRef;
     public GameOverScript gameOver;
+    public GameObject inGameMEnu;
     
     
     void Start() {
         gameOver.CloseGameOverMenu();
+        inGameMEnu.SetActive(true);
     }
 
     public void DeathAnimAndStopCharacter () {

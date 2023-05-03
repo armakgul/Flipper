@@ -529,6 +529,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveAndDetectRef: {fileID: 1713663005}
   gameOver: {fileID: 1777235581}
+  inGameMEnu: {fileID: 346529933}
+--- !u!1 &346529933 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1659796295936459986, guid: feb43deefa8c53b4ca93c863b6e609c9, type: 3}
+  m_PrefabInstance: {fileID: 1659796294263151723}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &443105533
 GameObject:
   m_ObjectHideFlags: 0
@@ -7447,11 +7453,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 165054398123624549, guid: 220e71644b3f1ad49a8fe76761d974b9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.02
+      value: -6.22
       objectReference: {fileID: 0}
     - target: {fileID: 165054398123624549, guid: 220e71644b3f1ad49a8fe76761d974b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.35
+      value: -1.42
       objectReference: {fileID: 0}
     - target: {fileID: 165054398123624549, guid: 220e71644b3f1ad49a8fe76761d974b9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7914,14 +7920,15 @@ MonoBehaviour:
   score: 1
   moveAndDetectRef: {fileID: 1713663005}
   gameManager: {fileID: 338009505}
+  NextLevelMenu: {fileID: 0}
   hearthTag: hearth
   obstacleTag: obstacle
   animator: {fileID: 1713663000}
-  nextLevelReq1: 3
-  nextLevelReq2: 5
-  nextLevelReq3: 3
-  nextLevelReq4: 3
-  nextLevelReq5: 3
+  nextLevelReq1: 7
+  nextLevelReq2: 8
+  nextLevelReq3: 9
+  nextLevelReq4: 9
+  nextLevelReq5: 10
   nextLevelLoad: 0
   currentLevel: 0
   highscore1: 0
@@ -8516,6 +8523,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ScoreText
       objectReference: {fileID: 0}
+    - target: {fileID: 5212495687130608166, guid: d9d1c62a82a0f074bb29aff2db186814, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadNextLevel
+      objectReference: {fileID: 0}
     - target: {fileID: 5229107609297066066, guid: d9d1c62a82a0f074bb29aff2db186814, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -8604,6 +8615,10 @@ PrefabInstance:
       propertyPath: admanager
       value: 
       objectReference: {fileID: 1735790390}
+    - target: {fileID: 5229107609297066067, guid: d9d1c62a82a0f074bb29aff2db186814, type: 3}
+      propertyPath: inGameMenu
+      value: 
+      objectReference: {fileID: 346529933}
     - target: {fileID: 5229107609297066070, guid: d9d1c62a82a0f074bb29aff2db186814, type: 3}
       propertyPath: m_Name
       value: DeathMenu

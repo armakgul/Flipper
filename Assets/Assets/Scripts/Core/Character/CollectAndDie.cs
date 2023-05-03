@@ -13,7 +13,8 @@ public class CollectAndDie : MonoBehaviour
     public int score = 0;
     public MoveAndDetect moveAndDetectRef;
     public MyGameManager gameManager;
-  
+
+    public GameObject NextLevelMenu;
 
     public string hearthTag = "hearth";
     public string obstacleTag = "obstacle";
@@ -23,11 +24,11 @@ public class CollectAndDie : MonoBehaviour
 
     // LEVEL TOPSCORE VE HIGHCORELARI
 
-    private int nextLevelReq1 = 7;
-    private int nextLevelReq2 = 8;
-    private int nextLevelReq3 = 9;
-    private int nextLevelReq4 = 9;
-    private int nextLevelReq5 = 10;
+    public int nextLevelReq1 = 1;
+    public int nextLevelReq2 = 8;
+    public int nextLevelReq3 = 9;
+    public int nextLevelReq4 = 9;
+    public int nextLevelReq5 = 10;
     
     //public int nextLevelReq6 = 3;
 
@@ -138,6 +139,11 @@ public class CollectAndDie : MonoBehaviour
                 Debug.Log("nextLevelLoad is :" + nextLevelLoad);
                 Debug.Log("levelAt is :" + PlayerPrefs.GetInt("levelAt"));
 
+                if (score>=nextLevelReq1 +1)
+                {
+                    NextLevelMenuOpened();
+                }
+
             }
             //LEVEL 2
             if (currentLevel == 2)
@@ -158,6 +164,10 @@ public class CollectAndDie : MonoBehaviour
                         PlayerPrefs.SetInt("levelAt", nextLevelLoad);
                         
                 }
+                if (score>=nextLevelReq2 +1)
+                {
+                    NextLevelMenuOpened();
+                }
             }
             //LEVEL 3
             if (currentLevel == 3)
@@ -177,6 +187,11 @@ public class CollectAndDie : MonoBehaviour
                         nextLevelLoad = currentLevel + 1;
                         PlayerPrefs.SetInt("levelAt", nextLevelLoad);
                     
+                }
+                if (score>=nextLevelReq3+1)
+                {
+                    DeathMenuOpened();
+                    NextLevelMenuOpened();
                 }
             }
             //LEVEL 4
@@ -201,6 +216,12 @@ public class CollectAndDie : MonoBehaviour
                         
                     
                 }
+
+                if (score>=nextLevelReq4+1)
+                {
+                    DeathMenuOpened();
+                    NextLevelMenuOpened();
+                }
             } 
             //LEVEL 5   
             if (currentLevel == 5)
@@ -223,6 +244,11 @@ public class CollectAndDie : MonoBehaviour
                         
                     
                 }
+                if (score>=nextLevelReq5+1)
+                {
+                    DeathMenuOpened();
+                    NextLevelMenuOpened();
+                }
             }
             
             // VELO INC BY COLLECT
@@ -237,6 +263,15 @@ public class CollectAndDie : MonoBehaviour
 
         if (other.gameObject.tag == obstacleTag)
         {
+            DeathMenuOpened();
+        }
+
+        
+
+        
+    }
+    
+    void DeathMenuOpened (){
 
             animator.SetBool("Dead", true);
             if (currentLevel == 1) {
@@ -269,13 +304,10 @@ public class CollectAndDie : MonoBehaviour
             FindObjectOfType<AudioManager>().Stop("Walking");
             
             gameManager.DeathAnimAndStopCharacter();
-            
-            
         }
 
-        
-    }
-    
-    
+        public void NextLevelMenuOpened() {
+            NextLevelMenu.SetActive(true);
+        }
 }
 

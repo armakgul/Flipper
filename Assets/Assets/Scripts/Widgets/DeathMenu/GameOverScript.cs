@@ -3,25 +3,34 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using GoogleMobileAds.Api;
-
+using UnityEngine.UI;
+using TMPro;
 
 public class GameOverScript : MonoBehaviour
 {
 
     public GoogleAdMobController admanager;
 
+    public GameObject inGameMenu;
+
     public GameObject gameOverMenuUI;
+
+
+     
     int currentSceneIndex;
 
     public  void Awake() {
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        
+
     }
     
 
     public void OpenGameOverMenu() {
         gameOverMenuUI.SetActive(true);
+        CloseInGameMenu();
         Time.timeScale = 0f;
-        Debug.Log("aha");
+
     }
 
     public void CloseGameOverMenu() {
@@ -64,5 +73,10 @@ public class GameOverScript : MonoBehaviour
 
         
     }
+
+    public void CloseInGameMenu () {
+        inGameMenu.SetActive(false);
+    }
+    
     
 }
