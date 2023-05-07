@@ -9,7 +9,7 @@ public class LevelManager : MonoBehaviour
     public Button[] lvlButtons;
     void Start()
     {
-        //PlayerPrefs.SetInt("levelAt", 1);
+        PlayerPrefs.SetInt("levelAt", 1);
         int levelAt = PlayerPrefs.GetInt("levelAt", 1);
         Debug.Log("levelAt in LevelManager is :" + PlayerPrefs.GetInt("levelAt"));
 

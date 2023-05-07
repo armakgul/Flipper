@@ -7,6 +7,8 @@ using TMPro;
 
 public class LevelSelect : MonoBehaviour
 {
+
+    public GameObject LoadingScreen;
     
     public int level;
     public TextMeshProUGUI levelText;
@@ -19,7 +21,24 @@ public class LevelSelect : MonoBehaviour
     }
 
     public void OpenScene() {
-        SceneManager.LoadScene("Level" + level.ToString());
+        //SceneManager.LoadScene("Level" + level.ToString());
+
+        StartCoroutine(LoadSceneAsync());
+    }
+
+    IEnumerator LoadSceneAsync () {
+
+        AsyncOperation operation = SceneManager.LoadSceneAsync("Level" + level.ToString());
+
+        LoadingScreen.SetActive(true);
+
+        while (!operation.isDone)
+        {
+            float progressValue = Mathf.Clamp01(operation.progress/0.9f);
+            //Slider.value = progressValue;
+
+            yield return null;
+        }
     }
 
 }

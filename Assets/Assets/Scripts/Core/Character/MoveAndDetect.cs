@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class MoveAndDetect : MonoBehaviour
 {
@@ -17,6 +18,8 @@ public class MoveAndDetect : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
+
+    
             Flip();
 
         }

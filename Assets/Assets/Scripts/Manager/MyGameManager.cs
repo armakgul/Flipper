@@ -7,10 +7,13 @@ public class MyGameManager : MonoBehaviour
     public MoveAndDetect moveAndDetectRef;
     public GameOverScript gameOver;
     public GameObject inGameMEnu;
+
+    public NextLevelMenu nextLevelMenuRef;
     
     
     void Start() {
         gameOver.CloseGameOverMenu();
+        nextLevelMenuRef.CloseNextLevelMenu();
         inGameMEnu.SetActive(true);
     }
 

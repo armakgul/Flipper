@@ -10,11 +10,15 @@ public class CollectAndDie : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI EndScoreText;
     public TextMeshProUGUI levelScore;
+
+    public TextMeshProUGUI NextLevelHighScore;
+    public TextMeshProUGUI NextLevelScore;
+
     public int score = 0;
     public MoveAndDetect moveAndDetectRef;
     public MyGameManager gameManager;
 
-    public GameObject NextLevelMenu;
+    public  NextLevelMenu nextLevelMenuRef;
 
     public string hearthTag = "hearth";
     public string obstacleTag = "obstacle";
@@ -24,13 +28,12 @@ public class CollectAndDie : MonoBehaviour
 
     // LEVEL TOPSCORE VE HIGHCORELARI
 
-    public int nextLevelReq1 = 1;
+    public int nextLevelReq1 = 7;
     public int nextLevelReq2 = 8;
     public int nextLevelReq3 = 9;
     public int nextLevelReq4 = 9;
     public int nextLevelReq5 = 10;
-    
-    //public int nextLevelReq6 = 3;
+    public int nextLevelReq6 = 10;
 
     public int nextLevelLoad;
     public int currentLevel;
@@ -67,7 +70,12 @@ public class CollectAndDie : MonoBehaviour
         {
             highscore5 = PlayerPrefs.GetInt("highscore5");
         }
+        if (currentLevel == 6)
+        {
+            highscore6 = PlayerPrefs.GetInt("highscore6");
+        }
     
+        
         /*
         highscore1 = 1;
         highscore2 = 1;
@@ -128,7 +136,7 @@ public class CollectAndDie : MonoBehaviour
                 
                 
                 
-                 if (highscore1 >= nextLevelReq1 && currentLevel >= PlayerPrefs.GetInt("levelAt"))
+                 if (highscore1 >= (nextLevelReq1 +1) && currentLevel >= PlayerPrefs.GetInt("levelAt"))
                 {
 
                         nextLevelLoad = currentLevel + 1;
@@ -157,7 +165,7 @@ public class CollectAndDie : MonoBehaviour
                 
                 
                 
-                 if (highscore2 >= nextLevelReq2 && currentLevel >= PlayerPrefs.GetInt("levelAt"))
+                 if (highscore2 >= nextLevelReq2 +1  && currentLevel >= PlayerPrefs.GetInt("levelAt"))
                 {
 
                         nextLevelLoad = currentLevel + 1;
@@ -181,7 +189,7 @@ public class CollectAndDie : MonoBehaviour
                 
                 
                 
-                 if (highscore3 >= nextLevelReq3 && currentLevel >= PlayerPrefs.GetInt("levelAt"))
+                 if (highscore3 >= nextLevelReq3 + 1 && currentLevel >= PlayerPrefs.GetInt("levelAt"))
                 {
                     
                         nextLevelLoad = currentLevel + 1;
@@ -190,7 +198,7 @@ public class CollectAndDie : MonoBehaviour
                 }
                 if (score>=nextLevelReq3+1)
                 {
-                    DeathMenuOpened();
+                    
                     NextLevelMenuOpened();
                 }
             }
@@ -206,7 +214,7 @@ public class CollectAndDie : MonoBehaviour
                 
                 
                 
-                 if (highscore4 >= nextLevelReq4 && currentLevel >= PlayerPrefs.GetInt("levelAt"))
+                 if (highscore4 >= nextLevelReq4+1 && currentLevel >= PlayerPrefs.GetInt("levelAt"))
                 {
                     
                     
@@ -219,7 +227,7 @@ public class CollectAndDie : MonoBehaviour
 
                 if (score>=nextLevelReq4+1)
                 {
-                    DeathMenuOpened();
+                    
                     NextLevelMenuOpened();
                 }
             } 
@@ -235,7 +243,7 @@ public class CollectAndDie : MonoBehaviour
                 
                 
                 
-                 if (highscore5 >= nextLevelReq5 && currentLevel >= PlayerPrefs.GetInt("levelAt"))
+                 if (highscore5 >= nextLevelReq5+1 && currentLevel >= PlayerPrefs.GetInt("levelAt"))
                 {
                     
  
@@ -246,8 +254,35 @@ public class CollectAndDie : MonoBehaviour
                 }
                 if (score>=nextLevelReq5+1)
                 {
-                    DeathMenuOpened();
+                    
                     NextLevelMenuOpened();
+                }
+            }
+            //LEVEL6
+            if (currentLevel == 6)
+            {
+                
+                 if (score > highscore6)
+                {
+                    highscore6 = score;
+                    PlayerPrefs.SetInt("highscore6", highscore6);
+                }
+                
+                
+                
+                 if (highscore6 >= nextLevelReq6+1 && currentLevel >= PlayerPrefs.GetInt("levelAt"))
+                {
+                    
+ 
+                        //nextLevelLoad = currentLevel + 1;
+                        //PlayerPrefs.SetInt("levelAt", nextLevelLoad);
+                        
+                    
+                }
+                if (score>=nextLevelReq6+1)
+                {
+                    
+                    DeathMenuOpened();
                 }
             }
             
@@ -307,7 +342,33 @@ public class CollectAndDie : MonoBehaviour
         }
 
         public void NextLevelMenuOpened() {
-            NextLevelMenu.SetActive(true);
+
+            if (currentLevel == 1) {
+                NextLevelHighScore.text = (highscore1-1).ToString();
+                NextLevelScore.text = (score-1).ToString();
+            }
+            if (currentLevel == 2) {
+                NextLevelHighScore.text = (highscore2-1).ToString();
+                NextLevelScore.text = (score-1).ToString();
+            }
+            if (currentLevel == 3) {
+                NextLevelHighScore.text = (highscore3-1).ToString();
+                NextLevelScore.text = (score-1).ToString();
+            }
+            if (currentLevel == 4) {
+                NextLevelHighScore.text = (highscore4-1).ToString();
+                NextLevelScore.text = (score-1).ToString();
+            }
+            if (currentLevel == 5) {
+                NextLevelHighScore.text = (highscore5-1).ToString();
+                NextLevelScore.text = (score-1).ToString();
+            }
+            if (currentLevel == 6) {
+                NextLevelHighScore.text = (highscore6-1).ToString();
+                NextLevelScore.text = (score-1).ToString();
+            }
+            nextLevelMenuRef.OpenNextLevelMenu();
+            Time.timeScale = 0f;
         }
 }
 
