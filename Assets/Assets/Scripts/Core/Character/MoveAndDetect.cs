@@ -19,8 +19,12 @@ public class MoveAndDetect : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
 
-    
-            Flip();
+            if (EventSystem.current.IsPointerOverGameObject())
+            {
+                Flip();
+                
+            }else return;
+            
 
         }
     }

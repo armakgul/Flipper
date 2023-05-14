@@ -147,7 +147,7 @@ public class CollectAndDie : MonoBehaviour
                 Debug.Log("nextLevelLoad is :" + nextLevelLoad);
                 Debug.Log("levelAt is :" + PlayerPrefs.GetInt("levelAt"));
 
-                if (score>=nextLevelReq1 +1)
+                if (score>=11)
                 {
                     NextLevelMenuOpened();
                 }
@@ -172,7 +172,7 @@ public class CollectAndDie : MonoBehaviour
                         PlayerPrefs.SetInt("levelAt", nextLevelLoad);
                         
                 }
-                if (score>=nextLevelReq2 +1)
+                if (score>=11)
                 {
                     NextLevelMenuOpened();
                 }
@@ -196,7 +196,7 @@ public class CollectAndDie : MonoBehaviour
                         PlayerPrefs.SetInt("levelAt", nextLevelLoad);
                     
                 }
-                if (score>=nextLevelReq3+1)
+                if (score>=11)
                 {
                     
                     NextLevelMenuOpened();
@@ -225,7 +225,7 @@ public class CollectAndDie : MonoBehaviour
                     
                 }
 
-                if (score>=nextLevelReq4+1)
+                if (score>=11)
                 {
                     
                     NextLevelMenuOpened();
@@ -252,7 +252,7 @@ public class CollectAndDie : MonoBehaviour
                         
                     
                 }
-                if (score>=nextLevelReq5+1)
+                if (score>=11)
                 {
                     
                     NextLevelMenuOpened();
@@ -279,7 +279,7 @@ public class CollectAndDie : MonoBehaviour
                         
                     
                 }
-                if (score>=nextLevelReq6+1)
+                if (score>=11)
                 {
                     
                     DeathMenuOpened();
