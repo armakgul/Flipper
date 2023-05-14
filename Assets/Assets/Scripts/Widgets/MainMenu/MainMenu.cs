@@ -12,11 +12,14 @@ public class MainMenu : MonoBehaviour
 
     public GoogleAdMobController admanager;
 
+    public GameObject TutorialMenu;
+
    
 
     // START
     private void Start() {
         CloseOptionsMenu();
+        CloseTutorialCanvas();
         FindObjectOfType<AudioManager>().PlayMainMenu("Music1");
     }
     
@@ -89,6 +92,18 @@ public class MainMenu : MonoBehaviour
         }
 
         
+    }
+
+
+    public void CloseTutorialCanvas() {
+
+        TutorialMenu.SetActive(false);
+
+    }
+    public void OpenTutorialCanvas () {
+
+        TutorialMenu.SetActive(true);
+
     }
 
 }

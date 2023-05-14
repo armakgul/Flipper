@@ -301,7 +301,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5229107609297066070, guid: d9d1c62a82a0f074bb29aff2db186814, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9d1c62a82a0f074bb29aff2db186814, type: 3}
@@ -7622,6 +7622,10 @@ PrefabInstance:
     - target: {fileID: 4054904611260836017, guid: a5f73485176cc3144b276589698b715d, type: 3}
       propertyPath: m_Name
       value: OptionsMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 4054904611260836017, guid: a5f73485176cc3144b276589698b715d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4054904611260836021, guid: a5f73485176cc3144b276589698b715d, type: 3}
       propertyPath: m_Pivot.x
