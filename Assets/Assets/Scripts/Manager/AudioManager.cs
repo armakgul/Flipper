@@ -43,7 +43,7 @@ public class AudioManager : MonoBehaviour
 
     // PLAY ONLY MAIN MENU MUSIC
     public void PlayMainMenu(string name) {
-        if (SceneManager.GetActiveScene().buildIndex == 0)
+        if (SceneManager.GetActiveScene().buildIndex == 7)
         {
             Debug.Log("MainMEnu");
             Sound s = Array.Find(sounds, sound => sound.name == name);
