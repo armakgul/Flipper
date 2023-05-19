@@ -314,6 +314,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1494377950128843470, guid: 2628e626406c5fb468aa09c751fd35c9, type: 3}
   m_PrefabInstance: {fileID: 115541463}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &115541465 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1494377950128843469, guid: 2628e626406c5fb468aa09c751fd35c9, type: 3}
+  m_PrefabInstance: {fileID: 115541463}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &144794372
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1202,6 +1207,10 @@ PrefabInstance:
     - target: {fileID: 4054904611260836017, guid: a5f73485176cc3144b276589698b715d, type: 3}
       propertyPath: m_Name
       value: OptionsMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 4054904611260836017, guid: a5f73485176cc3144b276589698b715d, type: 3}
+      propertyPath: m_TagString
+      value: options
       objectReference: {fileID: 0}
     - target: {fileID: 4054904611260836021, guid: a5f73485176cc3144b276589698b715d, type: 3}
       propertyPath: m_Pivot.x
@@ -8675,6 +8684,7 @@ MonoBehaviour:
   pathLayer:
     serializedVersion: 2
     m_Bits: 64
+  optionsButton: {fileID: 115541465}
 --- !u!114 &1713663006
 MonoBehaviour:
   m_ObjectHideFlags: 0

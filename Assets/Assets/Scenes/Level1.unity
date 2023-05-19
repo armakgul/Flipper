@@ -8047,6 +8047,7 @@ MonoBehaviour:
   pathLayer:
     serializedVersion: 2
     m_Bits: 64
+  optionsButton: {fileID: 1494377949671956113}
 --- !u!114 &1713663006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8603,6 +8604,11 @@ PrefabInstance:
       objectReference: {fileID: 5845844517860830486}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2628e626406c5fb468aa09c751fd35c9, type: 3}
+--- !u!1 &1494377949671956113 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1494377950128843469, guid: 2628e626406c5fb468aa09c751fd35c9, type: 3}
+  m_PrefabInstance: {fileID: 1494377949671956112}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1659796294263151723
 PrefabInstance:
   m_ObjectHideFlags: 0

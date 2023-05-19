@@ -18,8 +18,8 @@ public class OptionsMenu : MonoBehaviour
    }
 
    public void OpenContinueMenu() {
-        FindObjectOfType<AudioManager>().Stop("Walking");
         Time.timeScale = 0f;
+        FindObjectOfType<AudioManager>().Stop("Walking");
         this.gameObject.SetActive(true);
         
    }

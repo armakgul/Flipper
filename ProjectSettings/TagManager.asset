@@ -6,6 +6,7 @@ TagManager:
   tags:
   - obstacle
   - hearth
+  - options
   layers:
   - Default
   - TransparentFX

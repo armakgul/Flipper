@@ -1058,6 +1058,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1494377950128843470, guid: 2628e626406c5fb468aa09c751fd35c9, type: 3}
   m_PrefabInstance: {fileID: 653805303}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &653805305 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1494377950128843469, guid: 2628e626406c5fb468aa09c751fd35c9, type: 3}
+  m_PrefabInstance: {fileID: 653805303}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &667108520
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8092,6 +8097,7 @@ MonoBehaviour:
   pathLayer:
     serializedVersion: 2
     m_Bits: 64
+  optionsButton: {fileID: 653805305}
 --- !u!114 &1713663006
 MonoBehaviour:
   m_ObjectHideFlags: 0

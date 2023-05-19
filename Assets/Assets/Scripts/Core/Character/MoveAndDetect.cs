@@ -10,6 +10,8 @@ public class MoveAndDetect : MonoBehaviour
     public float castRadius = 0.1f;
     public LayerMask pathLayer;
     private bool isFlipped = false ;
+
+    public GameObject optionsButton;
     
    
     void Update()
@@ -27,11 +29,18 @@ public class MoveAndDetect : MonoBehaviour
                 Flip();
                 
             }else return;
+
+            
             */
 
             
 
-            Flip();
+            if (Time.timeScale != 0 && EventSystem.current.currentSelectedGameObject != optionsButton)
+            {
+                Flip();
+            }
+
+            
             
 
         }
