@@ -18,12 +18,20 @@ public class MoveAndDetect : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-
+            // below makes it twisted : first consume do not effect, continue button flips it.
+            // without it every click on button makes a consume
+            
+            /*
             if (EventSystem.current.IsPointerOverGameObject())
             {
                 Flip();
                 
             }else return;
+            */
+
+            
+
+            Flip();
             
 
         }
