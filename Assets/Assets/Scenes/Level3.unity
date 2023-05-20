@@ -7927,7 +7927,7 @@ MonoBehaviour:
   animator: {fileID: 1713663000}
   nextLevelReq1: 7
   nextLevelReq2: 8
-  nextLevelReq3: 8
+  nextLevelReq3: 9
   nextLevelReq4: 9
   nextLevelReq5: 10
   nextLevelReq6: 10

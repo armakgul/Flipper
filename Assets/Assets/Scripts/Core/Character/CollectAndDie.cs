@@ -35,6 +35,8 @@ public class CollectAndDie : MonoBehaviour
     public int nextLevelReq5 = 10;
     public int nextLevelReq6 = 10;
 
+    private int nextLevelScore = 11;
+
     public int nextLevelLoad;
     public int currentLevel;
     public int highscore1;
@@ -89,7 +91,7 @@ public class CollectAndDie : MonoBehaviour
         PlayerPrefs.SetInt("highscore4", 1);
         PlayerPrefs.SetInt("highscore5", 1);
         PlayerPrefs.SetInt("highscore6", 1);
-        */
+        
 
         Debug.Log("highscore1 is : " + highscore1);
         Debug.Log("highscore2 is : " + highscore2);
@@ -97,7 +99,8 @@ public class CollectAndDie : MonoBehaviour
         Debug.Log("highscore4 is : " + highscore4);
         Debug.Log("highscore5 is : " + highscore5);
         Debug.Log("highscore6 is : " + highscore6);
-
+        */
+        
 
         // PLAY WALKING EFFECT
         FindObjectOfType<AudioManager>().Play("Walking");
@@ -147,7 +150,7 @@ public class CollectAndDie : MonoBehaviour
                 Debug.Log("nextLevelLoad is :" + nextLevelLoad);
                 Debug.Log("levelAt is :" + PlayerPrefs.GetInt("levelAt"));
 
-                if (score>=11)
+                if (score>=nextLevelScore)
                 {
                     NextLevelMenuOpened();
                 }
@@ -172,7 +175,7 @@ public class CollectAndDie : MonoBehaviour
                         PlayerPrefs.SetInt("levelAt", nextLevelLoad);
                         
                 }
-                if (score>=11)
+                if (score>=nextLevelScore)
                 {
                     NextLevelMenuOpened();
                 }
@@ -196,7 +199,7 @@ public class CollectAndDie : MonoBehaviour
                         PlayerPrefs.SetInt("levelAt", nextLevelLoad);
                     
                 }
-                if (score>=11)
+                if (score>=nextLevelScore)
                 {
                     
                     NextLevelMenuOpened();
@@ -225,7 +228,7 @@ public class CollectAndDie : MonoBehaviour
                     
                 }
 
-                if (score>=11)
+                if (score>=nextLevelScore)
                 {
                     
                     NextLevelMenuOpened();
@@ -252,7 +255,7 @@ public class CollectAndDie : MonoBehaviour
                         
                     
                 }
-                if (score>=11)
+                if (score>=nextLevelScore)
                 {
                     
                     NextLevelMenuOpened();
@@ -279,7 +282,7 @@ public class CollectAndDie : MonoBehaviour
                         
                     
                 }
-                if (score>=11)
+                if (score>=nextLevelScore)
                 {
                     
                     DeathMenuOpened();
@@ -368,6 +371,7 @@ public class CollectAndDie : MonoBehaviour
                 NextLevelScore.text = (score-1).ToString();
             }
             nextLevelMenuRef.OpenNextLevelMenu();
+            FindObjectOfType<AudioManager>().Stop("Walking");
             Time.timeScale = 0f;
         }
 }
