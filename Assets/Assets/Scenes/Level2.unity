@@ -8339,6 +8339,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DeathMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 5229107609297066070, guid: d9d1c62a82a0f074bb29aff2db186814, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9d1c62a82a0f074bb29aff2db186814, type: 3}
 --- !u!114 &1758461411 stripped

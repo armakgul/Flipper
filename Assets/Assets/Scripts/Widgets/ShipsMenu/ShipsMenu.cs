@@ -12,7 +12,7 @@ public class ShipsMenu : MonoBehaviour
     //public GameObject character;
 
 
-    void Start () {
+    void Awake () {
 
         shipsCanvas.SetActive(false);
         rewardedCanvas.SetActive(false);
@@ -43,7 +43,7 @@ public class ShipsMenu : MonoBehaviour
         rewardedCanvas.SetActive(false);
     }
 
-    public void PlayRewardedAd() {
+    public void PlayRewardedAd(int buttonNumber) {
 
         //playRewardedAd fonksyionu çağrılcak
         //ad bitiminde seçili ve kayıtlı karakter texture i değişecek, kaydedilecek

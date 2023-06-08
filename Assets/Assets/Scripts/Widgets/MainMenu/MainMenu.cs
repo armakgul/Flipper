@@ -14,7 +14,7 @@ public class MainMenu : MonoBehaviour
     public GoogleAdMobController admanager;
     public GameObject TutorialMenu;
     
-    private bool isSoundOn = false;
+    private bool isSoundOn = true;
     public Sprite soundTextureOn;
     public Sprite soundTextureOff;
     public Button soundButton;
@@ -102,18 +102,18 @@ public class MainMenu : MonoBehaviour
     }
 
     public void SoundChange() {
-        if (!isSoundOn)
+        if (isSoundOn)
         {
-            AudioListener.volume = 1;
-            soundButton.image.sprite = soundTextureOn;
-            isSoundOn = true;
+            AudioListener.volume = 0;
+            soundButton.image.sprite = soundTextureOff;
+            isSoundOn = false;
 
 
         }
         else {
-            AudioListener.volume = 0;
-            soundButton.image.sprite = soundTextureOff;
-            isSoundOn = false;
+            AudioListener.volume = 1;
+            soundButton.image.sprite = soundTextureOn;
+            isSoundOn = true;
         }
     }
 
