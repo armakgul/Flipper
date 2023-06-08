@@ -215,7 +215,7 @@ public class GoogleAdMobController : MonoBehaviour
                 {
                     PrintStatus("Interstitial ad failed to load.");
                     return;
-                    SceneManager.LoadScene("EntraceMenu");
+                    //SceneManager.LoadScene("EntraceMenu");
                 }
 
                 PrintStatus("Interstitial ad loaded.");
@@ -231,7 +231,7 @@ public class GoogleAdMobController : MonoBehaviour
                     PrintStatus("Interstitial ad closed.");
                     OnAdClosedEvent.Invoke();
                     DestroyInterstitialAd();
-                    SceneManager.LoadScene("EntraceMenu");
+                    //SceneManager.LoadScene("EntraceMenu");
 
                 };
                 ad.OnAdImpressionRecorded += () =>
@@ -267,7 +267,7 @@ public class GoogleAdMobController : MonoBehaviour
         else
         {
             PrintStatus("Interstitial ad is not ready yet.");
-            SceneManager.LoadScene("EntraceMenu");
+            //SceneManager.LoadScene("EntraceMenu");
         }
     }
 

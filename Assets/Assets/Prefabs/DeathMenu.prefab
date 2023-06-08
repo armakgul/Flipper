@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 5199891528167915668}
   - component: {fileID: 5346887572919725449}
   m_Layer: 5
-  m_Name: Scoretext
+  m_Name: ScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1076,6 +1076,7 @@ GameObject:
   - component: {fileID: 5229107609005276355}
   - component: {fileID: 5229107609005276354}
   - component: {fileID: 5229107609005276357}
+  - component: {fileID: 6432104436784682584}
   - component: {fileID: 5229107609005276356}
   m_Layer: 5
   m_Name: MainMenuButton
@@ -1210,6 +1211,32 @@ MonoBehaviour:
           m_StringArgument: mainmenubuttonanim
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: InterstitialAdsButton, Assembly-CSharp
+        m_MethodName: ShowAd
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6432104436784682584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5229107609005276358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e93f9f6de2830494b97ec896573faede, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _androidAdUnitId: Interstitial_Android
+  _iOsAdUnitId: Interstitial_iOS
 --- !u!95 &5229107609005276356
 Animator:
   serializedVersion: 5
@@ -1250,7 +1277,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5229107609297066066
 RectTransform:
   m_ObjectHideFlags: 0

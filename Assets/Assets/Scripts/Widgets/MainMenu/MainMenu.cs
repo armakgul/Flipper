@@ -3,16 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using GoogleMobileAds.Api;
+using TMPro;
+using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
     
     public GameObject optionsMenu;
     public Animator sliderAnimator;
-
     public GoogleAdMobController admanager;
-
     public GameObject TutorialMenu;
+    
+    private bool isSoundOn = false;
+    public Sprite soundTextureOn;
+    public Sprite soundTextureOff;
+    public Button soundButton;
+
+    
 
    
 
@@ -69,7 +76,7 @@ public class MainMenu : MonoBehaviour
         //GoogleAdMobController.AdmobManager.RequestAndLoadInterstitialAd();
         //GoogleAdMobController.AdmobManager.ShowInterstitialAd();
         //admanager.RequestAndLoadInterstitialAd();
-        admanager.ShowInterstitialAd();
+        //admanager.ShowInterstitialAd();
     }
 
 
@@ -92,6 +99,22 @@ public class MainMenu : MonoBehaviour
         }
 
         
+    }
+
+    public void SoundChange() {
+        if (!isSoundOn)
+        {
+            AudioListener.volume = 1;
+            soundButton.image.sprite = soundTextureOn;
+            isSoundOn = true;
+
+
+        }
+        else {
+            AudioListener.volume = 0;
+            soundButton.image.sprite = soundTextureOff;
+            isSoundOn = false;
+        }
     }
 
 

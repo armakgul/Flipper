@@ -57,19 +57,19 @@ public class GameOverScript : MonoBehaviour
     //main menu and intersitial
     public void GoToMainMenu() {
         Time.timeScale = 1f;
-        InvokeShowIntersititial();
-        //SceneManager.LoadScene("EntraceMenu");
+        //InvokeShowIntersititial();
+        SceneManager.LoadScene("EntraceMenu");
     }
      public void InvokeShowIntersititial() {
         //GoogleAdMobController.AdmobManager.RequestAndLoadInterstitialAd();
         //GoogleAdMobController.AdmobManager.ShowInterstitialAd();
         //Invoke("LoadShowInterstitial",.25f);
         //admanager.RequestAndLoadInterstitialAd();
-        admanager.ShowInterstitialAd();
+        //admanager.ShowInterstitialAd();
     }
     public void LoadShowInterstitial() {
        //GoogleAdMobController.AdmobManager.RequestAndLoadInterstitialAd();
-       GoogleAdMobController.AdmobManager.ShowInterstitialAd();
+       //GoogleAdMobController.AdmobManager.ShowInterstitialAd();
 
         
     }
