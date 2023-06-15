@@ -6,6 +6,7 @@ public class InterstitialAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnit
     [SerializeField] string _androidAdUnitId = "Interstitial_Android";
     [SerializeField] string _iOsAdUnitId = "Interstitial_iOS";
     string _adUnitId;
+
  
     void Awake()
     {
@@ -29,6 +30,9 @@ public class InterstitialAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnit
         // Note that if the ad content wasn't previously loaded, this method will fail
         Debug.Log("Showing Ad: " + _adUnitId);
         Advertisement.Show(_adUnitId, this);
+
+        //Advertisement.Initialize(_gameId, false);
+        LoadAd();
         
         
     }
@@ -53,7 +57,7 @@ public class InterstitialAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnit
     }
  
     public void OnUnityAdsShowStart(string _adUnitId) { }
-    public void OnUnityAdsShowClick(string _adUnitId) { }
+    public void OnUnityAdsShowClick(string _adUnitId) { }   
     public void OnUnityAdsShowComplete(string _adUnitId, UnityAdsShowCompletionState showCompletionState) {
         LoadAd();
      }

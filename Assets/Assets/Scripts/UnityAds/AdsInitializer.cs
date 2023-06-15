@@ -1,5 +1,8 @@
 using UnityEngine;
 using UnityEngine.Advertisements;
+using System.Collections;
+using System.Collections.Generic;
+
  
 public class AdsInitializer : MonoBehaviour, IUnityAdsInitializationListener
 {
@@ -8,7 +11,7 @@ public class AdsInitializer : MonoBehaviour, IUnityAdsInitializationListener
     [SerializeField] bool _testMode = false;
 
     [SerializeField] InterstitialAdsButton interstitialAdsButton;
-    [SerializeField] RewardedAdsButton[] rewardedAdsButton = new RewardedAdsButton[6];
+    [SerializeField] RewardedAdsButton rewardedAdsButton;
     private string _gameId;
  
     void Awake()
@@ -36,13 +39,7 @@ public class AdsInitializer : MonoBehaviour, IUnityAdsInitializationListener
     {
         Debug.Log("Unity Ads initialization complete.");
         interstitialAdsButton.LoadAd();
-        
-        for (int i = 0; i <= 5; i++)
-        {
-            rewardedAdsButton[i].LoadAd();
-        }
-        
-
+        //rewardedAdsButton.LoadAd();
     }
  
     public void OnInitializationFailed(UnityAdsInitializationError error, string message)

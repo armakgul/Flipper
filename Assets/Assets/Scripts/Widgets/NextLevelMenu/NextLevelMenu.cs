@@ -9,6 +9,9 @@ public class NextLevelMenu : MonoBehaviour
 
     public GameObject inGameMenu;
     public GameObject nextLevelMenuUI;
+    
+
+
 
     int currentSceneIndex;
 

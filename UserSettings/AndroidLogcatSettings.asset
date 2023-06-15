@@ -1,19 +1,13 @@
 {
     "m_SelectedDeviceId": "85A699CQ5HWOZ9YT",
     "m_SelectedPackage": {
-        "deviceId": "85A699CQ5HWOZ9YT",
-        "name": "com.pivagames.piratedash",
-        "processId": 13947,
+        "deviceId": "",
+        "name": "",
+        "processId": 0,
         "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
-        {
-            "deviceId": "85A699CQ5HWOZ9YT",
-            "name": "com.pivagames.piratedash",
-            "processId": 27322,
-            "exited": true
-        },
         {
             "deviceId": "85A699CQ5HWOZ9YT",
             "name": "com.pivagames.piratedash",
@@ -42,7 +36,7 @@
             "deviceId": "85A699CQ5HWOZ9YT",
             "name": "com.pivagames.piratedash",
             "processId": 13947,
-            "exited": false
+            "exited": true
         }
     ],
     "m_Tags": {

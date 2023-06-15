@@ -8,7 +8,8 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
     [SerializeField] string _androidAdUnitId = "Rewarded_Android";
     [SerializeField] string _iOSAdUnitId = "Rewarded_iOS";
     string _adUnitId = null; // This will remain null for unsupported platforms
-    public int shipButtonNumber;
+
+    public int skinNumber;
  
     void Awake()
     {   
@@ -62,6 +63,9 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
             LoadAd();
             Debug.Log("Unity Ads Rewarded Ad Completed");
             // Grant a reward.
+
+            GrantAReward(skinNumber);
+
         }
     }
  
@@ -85,6 +89,41 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
     {
         // Clean up the button listeners:
         //_showAdButton.onClick.RemoveAllListeners();
+    }
+
+    public void GrantAReward (int skinNumber) {
+        switch (skinNumber)
+        {
+        case 6:
+            PlayerPrefs.SetInt("ShipTextureNumber",6);
+            Debug.Log(skinNumber);
+            break;
+        case 5:
+            PlayerPrefs.SetInt("ShipTextureNumber",5);
+            Debug.Log(skinNumber);
+            break;
+        case 4:
+            PlayerPrefs.SetInt("ShipTextureNumber",4);
+            Debug.Log(skinNumber);
+            break;
+        case 3:
+            PlayerPrefs.SetInt("ShipTextureNumber",3);
+             Debug.Log(skinNumber);
+            break;
+        case 2:
+            PlayerPrefs.SetInt("ShipTextureNumber",2);
+            Debug.Log(skinNumber);
+            break;
+        case 1:
+            PlayerPrefs.SetInt("ShipTextureNumber",1);
+             Debug.Log(skinNumber);
+            break;
+        default:
+            PlayerPrefs.SetInt("ShipTextureNumber",1);
+             Debug.Log(skinNumber);
+            break;
+        }
+
     }
 
 }

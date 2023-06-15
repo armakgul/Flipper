@@ -8,6 +8,10 @@ public class ShipsMenu : MonoBehaviour
     public GameObject shipsCanvas;
 
     public GameObject rewardedCanvas;
+    
+    public int shipButtonNumber;
+
+    [SerializeField] RewardedAdsButton rewardedAdsButton;
 
     //public GameObject character;
 
@@ -22,6 +26,7 @@ public class ShipsMenu : MonoBehaviour
     public void OpensShipsMenu() {
         
         shipsCanvas.SetActive(true);
+
         
 
     }
@@ -32,8 +37,12 @@ public class ShipsMenu : MonoBehaviour
 
     }
 
-    public void OpenRewardedCanvas () {
+    public void OpenRewardedCanvas (int number) {
         rewardedCanvas.SetActive(true);
+
+        Debug.Log(number);
+
+        shipButtonNumber = number;
     }
 
     // rewarded ads gössterildikten hemen sonra çağrılcak
@@ -43,16 +52,11 @@ public class ShipsMenu : MonoBehaviour
         rewardedCanvas.SetActive(false);
     }
 
-    public void PlayRewardedAd(int buttonNumber) {
+    public void PlayRewardedAd() {
 
-        //playRewardedAd fonksyionu çağrılcak
-        //ad bitiminde seçili ve kayıtlı karakter texture i değişecek, kaydedilecek
-        //bu sprite değerini buttondan alacak
-        //buttonlar üzerlerinde bir sayı tutacak
-        //bu scriptte bu sayı değeri üzerinden texture ve başka bir sayı tutulacak
-
-        
+       rewardedAdsButton.skinNumber = shipButtonNumber;        
         
     }
+
 }
 
