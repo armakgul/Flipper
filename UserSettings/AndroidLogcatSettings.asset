@@ -1,42 +1,48 @@
 {
     "m_SelectedDeviceId": "85A699CQ5HWOZ9YT",
     "m_SelectedPackage": {
-        "deviceId": "",
-        "name": "",
-        "processId": 0,
+        "deviceId": "85A699CQ5HWOZ9YT",
+        "name": "com.pivagames.piratedash",
+        "processId": 12908,
         "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
         {
             "deviceId": "85A699CQ5HWOZ9YT",
-            "name": "com.pivagames.piratedash",
-            "processId": 28209,
-            "exited": true
-        },
-        {
-            "deviceId": "85A699CQ5HWOZ9YT",
-            "name": "com.pivagames.piratedash",
-            "processId": 9229,
-            "exited": true
-        },
-        {
-            "deviceId": "85A699CQ5HWOZ9YT",
-            "name": "com.pivagames.piratedash",
-            "processId": 12585,
-            "exited": true
-        },
-        {
-            "deviceId": "85A699CQ5HWOZ9YT",
             "name": "com.miui.home",
-            "processId": 1757,
+            "processId": 1665,
             "exited": false
         },
         {
             "deviceId": "85A699CQ5HWOZ9YT",
             "name": "com.pivagames.piratedash",
-            "processId": 13947,
+            "processId": 5774,
             "exited": true
+        },
+        {
+            "deviceId": "85A699CQ5HWOZ9YT",
+            "name": "com.pivagames.piratedash",
+            "processId": 7993,
+            "exited": true
+        },
+        {
+            "deviceId": "85A699CQ5HWOZ9YT",
+            "name": "com.pivagames.piratedash",
+            "processId": 8815,
+            "exited": true
+        },
+        {
+            "deviceId": "85A699CQ5HWOZ9YT",
+            "name": "com.pivagames.piratedash",
+            "processId": 9760,
+            "exited": true
+        },
+        {
+            "deviceId": "85A699CQ5HWOZ9YT",
+            "name": "com.pivagames.piratedash",
+            "processId": 12908,
+            "exited": false
         }
     ],
     "m_Tags": {

@@ -27,6 +27,10 @@ public class CollectAndDie : MonoBehaviour
 
      public NextLevelStars nextLevelBackground;
 
+     public GameObject character;
+
+     public Sprite wreckSprite;
+
 
     // LEVEL TOPSCORE VE HIGHCORELARI
 
@@ -643,6 +647,9 @@ public class CollectAndDie : MonoBehaviour
     void DeathMenuOpened (){
 
             animator.SetBool("Dead", true);
+
+            character.GetComponent<SpriteRenderer>().sprite = wreckSprite;
+
             if (currentLevel == 1) {
                 levelScore.text = (highscore1-1).ToString();
                 EndScoreText.text = (score-1).ToString();

@@ -16,7 +16,7 @@ public class ShipsMenu : MonoBehaviour
     //public GameObject character;
 
 
-    void Awake () {
+    void Start () {
 
         shipsCanvas.SetActive(false);
         rewardedCanvas.SetActive(false);

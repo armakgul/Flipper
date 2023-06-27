@@ -1,7 +1,5 @@
 using UnityEngine;
 using UnityEngine.Advertisements;
-using System.Collections;
-using System.Collections.Generic;
 
  
 public class AdsInitializer : MonoBehaviour, IUnityAdsInitializationListener
@@ -10,7 +8,7 @@ public class AdsInitializer : MonoBehaviour, IUnityAdsInitializationListener
     [SerializeField] string _iOSGameId;
     [SerializeField] bool _testMode = false;
 
-    [SerializeField] InterstitialAdsButton interstitialAdsButton;
+    [SerializeField] InterstitialAdsButton[] interstitialAdsButton;
     [SerializeField] RewardedAdsButton rewardedAdsButton;
     private string _gameId;
  
@@ -38,8 +36,13 @@ public class AdsInitializer : MonoBehaviour, IUnityAdsInitializationListener
     public void OnInitializationComplete()
     {
         Debug.Log("Unity Ads initialization complete.");
-        interstitialAdsButton.LoadAd();
-        //rewardedAdsButton.LoadAd();
+        rewardedAdsButton.LoadAd();
+        for (int i = 0; i < 3; i++)
+        {
+            interstitialAdsButton[i].LoadAd();
+        }
+        
+        
     }
  
     public void OnInitializationFailed(UnityAdsInitializationError error, string message)
