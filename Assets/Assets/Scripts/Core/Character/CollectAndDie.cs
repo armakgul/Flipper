@@ -164,6 +164,8 @@ public class CollectAndDie : MonoBehaviour
         // PLAY WALKING EFFECT
         FindObjectOfType<AudioManager>().Play("Walking");
 
+        //GoogleAdMobController.AdmobManager.RequestAndLoadInterstitialAd();
+
 
     }
 
@@ -710,6 +712,15 @@ public class CollectAndDie : MonoBehaviour
             FindObjectOfType<AudioManager>().Stop("Walking");
             
             gameManager.DeathAnimAndStopCharacter();
+
+
+        // Admob vs unity check
+        if (GoogleAdMobController.AdmobManager.admobInterstitialAd != null)
+        {
+            GoogleAdMobController.AdmobManager.ShowInterstitialAd();
+        } else InterstitialAdsButton.unityAdsInterstitial.ShowAd();
+            
+            
         }
 
         public void NextLevelMenuOpened() {

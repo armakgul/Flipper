@@ -3,6 +3,8 @@ using UnityEngine.Advertisements;
  
 public class InterstitialAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowListener
 {
+
+    public static InterstitialAdsButton unityAdsInterstitial;
     [SerializeField] string _androidAdUnitId = "Interstitial_Android";
     [SerializeField] string _iOsAdUnitId = "Interstitial_iOS";
     string _adUnitId;

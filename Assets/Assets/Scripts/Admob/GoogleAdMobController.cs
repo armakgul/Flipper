@@ -16,6 +16,8 @@ public class GoogleAdMobController : MonoBehaviour
     private AppOpenAd appOpenAd;
     private BannerView bannerView;
     private InterstitialAd interstitialAd;
+
+    public InterstitialAd admobInterstitialAd;
     private RewardedAd rewardedAd;
     private RewardedInterstitialAd rewardedInterstitialAd;
     private float deltaTime;
@@ -232,6 +234,7 @@ public class GoogleAdMobController : MonoBehaviour
                     OnAdClosedEvent.Invoke();
                     DestroyInterstitialAd();
                     //SceneManager.LoadScene("EntraceMenu");
+                    RequestAndLoadInterstitialAd();
 
                 };
                 ad.OnAdImpressionRecorded += () =>
@@ -255,11 +258,14 @@ public class GoogleAdMobController : MonoBehaviour
                                                adValue.Value);
                     PrintStatus(msg);
                 };
+
+                admobInterstitialAd = interstitialAd;
             });
     }
 
     public void ShowInterstitialAd()
     {
+        
         if (interstitialAd != null && interstitialAd.CanShowAd())
         {
             interstitialAd.Show();
