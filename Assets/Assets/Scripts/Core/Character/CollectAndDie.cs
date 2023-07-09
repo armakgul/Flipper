@@ -68,6 +68,12 @@ public class CollectAndDie : MonoBehaviour
     public int highscore11;
     public int highscore12;
 
+    public InterstitialAdsButton endAd;
+
+
+    void Awake() {
+        endAd = GameObject.Find("UnityAds").GetComponent<InterstitialAdsButton>();
+    }
     void Start () {
         animator.SetBool("Dead", false);
         
@@ -715,11 +721,13 @@ public class CollectAndDie : MonoBehaviour
 
 
         // Admob vs unity check
+        /*
         if (GoogleAdMobController.AdmobManager.admobInterstitialAd != null)
         {
             GoogleAdMobController.AdmobManager.ShowInterstitialAd();
-        } else InterstitialAdsButton.unityAdsInterstitial.ShowAd();
-            
+        } else endAd.ShowAd();
+        */
+        endAd.ShowAd();
             
         }
 

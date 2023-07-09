@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 177
+  controlID: 75
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 24
+  controlID: 150
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 110
+  controlID: 151
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -189,8 +189,8 @@ MonoBehaviour:
     y: 0
     width: 492
     height: 685
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -206,7 +206,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectSettingsWindow
+  m_Name: SimulatorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -215,9 +215,9 @@ MonoBehaviour:
     y: 0
     width: 839
     height: 685
-  m_MinSize: {x: 312, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 20}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 23}
   - {fileID: 17}
@@ -227,8 +227,8 @@ MonoBehaviour:
   - {fileID: 13}
   - {fileID: 20}
   - {fileID: 18}
-  m_Selected: 6
-  m_LastSelected: 3
+  m_Selected: 1
+  m_LastSelected: 2
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -278,8 +278,8 @@ MonoBehaviour:
     y: 0
     width: 589
     height: 939
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 27}
   m_Panes:
   - {fileID: 27}
@@ -335,9 +335,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 487
+    x: 492
     y: 73
-    width: 831
+    width: 837
     height: 664
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -366,7 +366,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 758
-    width: 1319
+    width: 1330
     height: 233
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -374,7 +374,7 @@ MonoBehaviour:
     m_SaveData: []
     m_OverlaysVisible: 1
   m_SearchFilter:
-    m_NameFilter: 
+    m_NameFilter: manifest
     m_ClassNames: []
     m_AssetLabels: []
     m_AssetBundleNames: []
@@ -386,22 +386,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Assets/Scripts/UnityAds
+    - Assets
     m_Globs: []
-    m_OriginalText: 
+    m_OriginalText: manifest
   m_ViewMode: 1
   m_StartGridSize: 68
   m_LastFolders:
-  - Assets/Assets/Scripts/UnityAds
+  - Assets
   m_LastFoldersGridSize: 68
   m_LastProjectPath: C:\Users\armak\OneDrive\Documents\GitHub\Flipper - Github
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 367}
-    m_SelectedIDs: 20680000
-    m_LastClickedID: 26656
-    m_ExpandedIDs: 00000000da680000dc680000de680000e0680000e2680000e4680000e6680000e8680000ea680000ec680000ee680000
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: e2680000
+    m_LastClickedID: 26850
+    m_ExpandedIDs: 00000000bc680000be680000c0680000c2680000c4680000c6680000c8680000ca680000cc680000ce680000d068000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -429,7 +429,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000da680000dc680000de680000e0680000e2680000e4680000e6680000e8680000ea680000ec680000ee680000
+    m_ExpandedIDs: 00000000bc680000be680000c0680000c2680000c4680000c6680000c8680000ca680000cc680000ce680000d0680000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -454,8 +454,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: fc54ffff
-    m_LastClickedInstanceID: -43780
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: dae0000084620000ee670000306500000000000028e00000
     m_RenameOverlay:
@@ -542,7 +542,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 367}
     m_SelectedIDs: 20680000
     m_LastClickedID: 26656
-    m_ExpandedIDs: 00000000da680000dc680000de680000e0680000e2680000e4680000e6680000e8680000ea680000ec680000ee680000
+    m_ExpandedIDs: 00000000bc680000be680000c0680000c2680000c4680000c6680000c8680000ca680000cc680000ce680000d0680000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -570,7 +570,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000da680000dc680000de680000e0680000e2680000e4680000e6680000e8680000ea680000ec680000ee680000
+    m_ExpandedIDs: 00000000bc680000be680000c0680000c2680000c4680000c6680000c8680000ca680000cc680000ce680000d0680000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -648,7 +648,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 758
-    width: 1319
+    width: 1330
     height: 233
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -668,22 +668,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Assets/Scripts/UnityAds
+    - Assets/Assets/Prefabs/newMainMenu
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 60
   m_LastFolders:
-  - Assets/Assets/Scripts/UnityAds
+  - Assets/Assets/Prefabs/newMainMenu
   m_LastFoldersGridSize: 60
   m_LastProjectPath: C:\Users\armak\OneDrive\Documents\GitHub\Flipper - Github
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 299}
-    m_SelectedIDs: 20680000
-    m_LastClickedID: 26656
-    m_ExpandedIDs: 00000000da680000dc680000de680000e0680000e2680000e4680000e6680000e8680000ea680000ec680000ee680000
+    scrollPos: {x: 0, y: 111}
+    m_SelectedIDs: c6720000
+    m_LastClickedID: 29382
+    m_ExpandedIDs: 00000000bc680000be680000c0680000c2680000c4680000c6680000c8680000ca680000cc680000ce680000d0680000e268000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -711,7 +711,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000da680000dc680000de680000e0680000e2680000e4680000e6680000e8680000ea680000ec680000ee680000
+    m_ExpandedIDs: 00000000bc680000be680000c0680000c2680000c4680000c6680000c8680000ca680000cc680000ce680000d0680000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -736,8 +736,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: fc54ffff
-    m_LastClickedInstanceID: -43780
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 84620000ee6700003065000000000000
     m_RenameOverlay:
@@ -787,9 +787,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 487
+    x: 492
     y: 73
-    width: 831
+    width: 837
     height: 664
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -812,7 +812,7 @@ MonoBehaviour:
   m_UseMipMap: 0
   m_SimulatorState:
     controlPanelVisible: 0
-    controlPanelWidth: NaN
+    controlPanelWidth: 0
     controlPanelFoldoutKeys:
     - UnityEditor.AdaptivePerformance.Editor.AdaptivePerformanceUIExtension
     - UnityEditor.DeviceSimulation.ApplicationSettingsPlugin
@@ -823,7 +823,7 @@ MonoBehaviour:
     pluginStates:
     - '{"m_SerializationStates":{"thermalFoldout":false,"performanceFoldout":false,"developerFoldout":false,"indexerFoldout":false,"scalersFoldout":false,"deviceSettingsFoldout":false}}'
     - '{}'
-    scale: 10
+    scale: 26
     fitToScreenEnabled: 1
     rotationDegree: 0
     highlightSafeAreaEnabled: 0
@@ -945,7 +945,7 @@ MonoBehaviour:
     m_SaveData: []
     m_OverlaysVisible: 1
   m_PosLeft: {x: 0, y: 0}
-  m_PosRight: {x: 0, y: 1076}
+  m_PosRight: {x: 0, y: 780}
   m_Scope: 1
   m_SplitterFlex: 0.2
   m_SearchText: 
@@ -1003,9 +1003,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 6ed9ffffa6d9ffffa0dcffff4eddffff58dfffff66e1ffff74e3ffff82e5ffff90e7ffff9ee9ffffacebffffbaedffffc8efffffd6f1ffffe4f3fffff2f5fffff8f5ffff28fbffff
+      m_SelectedIDs: 46a60000
+      m_LastClickedID: 42566
+      m_ExpandedIDs: a0cdffffeecdffffe8d0ffff98d1ffffa4d3ffffb4d5ffffc4d7ffffd4d9ffffe4dbfffff4ddffff04e0ffff14e2ffff24e4ffff34e6ffff44e8ffff54eaffff5aeaffffe8eeffff28f5ffff28fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1049,9 +1049,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 487
+    x: 492
     y: 73
-    width: 831
+    width: 837
     height: 664
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -1410,9 +1410,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 487
+    x: 492
     y: 73
-    width: 831
+    width: 837
     height: 664
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -1616,22 +1616,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Assets/Scripts
+    - Assets/Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 68
   m_LastFolders:
-  - Assets/Assets/Scripts
+  - Assets/Assets/Scenes
   m_LastFoldersGridSize: 68
   m_LastProjectPath: C:\Users\armak\OneDrive\Documents\GitHub\Flipper - Github
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 111}
-    m_SelectedIDs: e0680000
-    m_LastClickedID: 26848
-    m_ExpandedIDs: 00000000da680000dc680000de680000e0680000e2680000e4680000e6680000e8680000ea680000ec680000ee680000006900000669000000ca9a3b
+    m_SelectedIDs: 867e0000
+    m_LastClickedID: 32390
+    m_ExpandedIDs: 00000000bc680000be680000c0680000c2680000c4680000c6680000c8680000ca680000cc680000ce680000d0680000e268000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1659,7 +1659,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000da680000dc680000de680000e0680000e2680000e4680000e6680000e8680000ea680000ec680000ee680000
+    m_ExpandedIDs: 00000000bc680000be680000c0680000c2680000c4680000c6680000c8680000ca680000cc680000ce680000d0680000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1737,7 +1737,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 758
-    width: 1319
+    width: 1330
     height: 233
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -1775,7 +1775,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -19390
+  m_LastSelectedObjectID: -5518
 --- !u!114 &27
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1812,7 +1812,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 565
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
