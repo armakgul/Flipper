@@ -6,7 +6,7 @@ using TMPro;
 using UnityEngine.SceneManagement;
 
 public class CollectAndDie : MonoBehaviour
-{
+{//öoöıöıöıöıö
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI EndScoreText;
     public TextMeshProUGUI levelScore;
